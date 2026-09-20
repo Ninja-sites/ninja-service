@@ -8,6 +8,17 @@
 <meta property="og:title" content="NINJA — Sites web pour commerces · 0 € de création, 20 €/mois">
 <meta property="og:description" content="Votre commerce mérite d'être trouvé. Création 0 €, puis 20 €/mois tout compris.">
 <meta property="og:type" content="website">
+<link rel="canonical" href="https://ninja-sites.github.io/ninja-service/">
+<link rel="alternate" hreflang="fr" href="https://ninja-sites.github.io/ninja-service/">
+<link rel="alternate" hreflang="nl" href="https://ninja-sites.github.io/ninja-service/nl/">
+<link rel="alternate" hreflang="ar" href="https://ninja-sites.github.io/ninja-service/ar/">
+<link rel="alternate" hreflang="x-default" href="https://ninja-sites.github.io/ninja-service/">
+<meta property="og:url" content="https://ninja-sites.github.io/ninja-service/">
+<meta property="og:locale" content="fr_BE">
+<meta property="og:image" content="https://ninja-sites.github.io/ninja-service/assets/og-cover-fr.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=El+Messiri:wght@500;600;700&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
@@ -46,6 +57,7 @@ em{font-style:normal;color:var(--red)}
 .lang:hover{border-color:var(--red);color:var(--red)}
 .langs{display:flex;gap:6px;align-items:center}
 .langs .lang[aria-current="true"]{border-color:var(--red);color:var(--red);font-weight:700}
+a.lang{text-decoration:none;display:inline-block}
 @media(max-width:860px){.nav nav{display:none}}
 
 /* buttons */
@@ -113,6 +125,20 @@ details p{margin:12px 0 0;color:var(--mut);font-size:.97rem}
 footer{border-top:1px solid var(--line);padding:34px 0;color:var(--mut);font-size:.88rem}
 footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between}
 
+/* form */
+.form{display:grid;gap:14px;max-width:600px;margin:30px auto 0;text-align:start}
+.form .row{display:grid;gap:14px;grid-template-columns:1fr 1fr}
+@media(max-width:620px){.form .row{grid-template-columns:1fr}}
+.form label{display:block;font-size:.86rem;font-weight:600;margin-bottom:7px}
+.form input,.form select,.form textarea{width:100%;background:var(--ink2);border:1px solid var(--line);color:var(--cream);font:inherit;font-size:.97rem;padding:12px 14px;border-radius:12px}
+.form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--red)}
+.form textarea{resize:vertical}
+.form .btn{justify-self:start}
+.form .ok{color:#7ee2a8;font-size:.95rem;margin:0}
+.form .note{margin:0}
+.tlink{color:var(--red);text-decoration:none}
+.tlink:hover{text-decoration:underline}
+
 /* reveal */
 .rv{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
@@ -128,9 +154,10 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
       <a href="#probleme" data-fr="Le problème" data-nl="Het probleem" data-ar="المشكلة">Le problème</a>
       <a href="#offre" data-fr="L'offre" data-nl="Het aanbod" data-ar="العرض">L'offre</a>
       <a href="#etapes" data-fr="Comment ça marche" data-nl="Hoe het werkt" data-ar="كيف نعمل">Comment ça marche</a>
+      <a href="#garantie" data-fr="Notre engagement" data-nl="Onze belofte" data-ar="التزامنا">Notre engagement</a>
       <a href="#faq" data-fr="Questions" data-nl="Vragen" data-ar="أسئلة">Questions</a>
     </nav>
-    <div class="langs"><button class="lang" type="button" data-setlang="fr" aria-current="true">FR</button><button class="lang" type="button" data-setlang="nl" aria-current="false">NL</button><button class="lang" type="button" data-setlang="ar" aria-current="false">العربية</button></div>
+    <div class="langs"><a class="lang" href="./" hreflang="fr" aria-current="true">FR</a><a class="lang" href="nl/" hreflang="nl">NL</a><a class="lang" href="ar/" hreflang="ar">العربية</a></div>
   </div>
 </div>
 
@@ -239,6 +266,28 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
   </div>
 </section>
 
+<section class="sec" id="garantie">
+  <div class="wrap">
+    <div class="kick rv" data-fr="Notre engagement" data-nl="Onze belofte" data-ar="التزامنا">Notre engagement</div>
+    <h2 class="rv" data-fr="Si votre téléphone ne sonne pas plus, vous ne payez pas le deuxième mois" data-nl="Als uw telefoon niet meer rinkelt, betaalt u de tweede maand niet" data-ar="إن لم يرنّ هاتفك أكثر، لا تدفع الشهر الثاني">Si votre téléphone ne sonne pas plus, vous ne payez pas le deuxième mois</h2>
+    <p class="lede rv" data-fr="Nous ne vous demandons pas de nous croire sur parole. Si le site ne vous apporte pas plus d'appels qu'avant, vous ne payez pas le deuxième mois. Votre risque est nul : vous n'avancez rien." data-nl="Wij vragen u niet ons op ons woord te geloven. Brengt de website u niet meer oproepen dan voordien, dan betaalt u de tweede maand niet. Uw risico is nul: u betaalt niets vooraf." data-ar="لا نطلب منك أن تصدّقنا. إن لم يجلب لك الموقع مكالمات أكثر مما كنت عليه، فلا تدفع الشهر الثاني. مخاطرتك صفر: لا تقدّم أي مبلغ مسبقًا.">Nous ne vous demandons pas de nous croire sur parole. Si le site ne vous apporte pas plus d'appels qu'avant, vous ne payez pas le deuxième mois. Votre risque est nul : vous n'avancez rien.</p>
+    <div class="grid g3" style="margin-top:26px">
+      <div class="card rv">
+        <h3 data-fr="Vous arrêtez quand vous voulez" data-nl="U stopt wanneer u wilt" data-ar="تتوقّف متى شئت">Vous arrêtez quand vous voulez</h3>
+        <p data-fr="Un simple message suffit : sans frais, sans préavis, sans durée imposée." data-nl="Eén bericht volstaat: geen kosten, geen opzegtermijn, geen vaste looptijd." data-ar="رسالة واحدة تكفي: بلا رسوم، بلا إشعار مسبق، وبلا مدة إلزامية.">Un simple message suffit : sans frais, sans préavis, sans durée imposée.</p>
+      </div>
+      <div class="card rv">
+        <h3 data-fr="Le domaine à votre nom" data-nl="Het domein op uw naam" data-ar="النطاق باسمك">Le domaine à votre nom</h3>
+        <p data-fr="Votre nom de domaine et votre fiche Google sont enregistrés à votre nom dès le premier jour." data-nl="Uw domeinnaam en uw Google-profiel worden vanaf de eerste dag op uw naam geregistreerd." data-ar="اسم نطاقك وملفّ Google مسجّلان باسمك من اليوم الأول.">Votre nom de domaine et votre fiche Google sont enregistrés à votre nom dès le premier jour.</p>
+      </div>
+      <div class="card rv">
+        <h3 data-fr="Un seul interlocuteur" data-nl="Eén aanspreekpunt" data-ar="شخص واحد تتعامل معه">Un seul interlocuteur</h3>
+        <p data-fr="Toujours la même personne, qui connaît votre commerce — pas un service client anonyme." data-nl="Altijd dezelfde persoon, die uw zaak kent — geen anonieme klantendienst." data-ar="الشخص نفسه دائمًا، يعرف محلك — لا خدمة عملاء مجهولة.">Toujours la même personne, qui connaît votre commerce — pas un service client anonyme.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="sec" id="faq">
   <div class="wrap">
     <div class="kick rv" data-fr="Questions" data-nl="Vragen" data-ar="أسئلة">Questions</div>
@@ -256,6 +305,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
         <summary data-fr="Que couvrent exactement les 20 € ?" data-nl="Wat dekt de 20 € precies?" data-ar="ماذا تغطّي الـ20 يورو بالضبط؟">Que couvrent exactement les 20 € ?</summary>
         <p data-fr="L'hébergement du site, les sauvegardes, les mises à jour, la tenue de votre fiche Google et les modifications que vous nous demandez. Pas de frais cachés." data-nl="De hosting van de website, de back-ups, de updates, het beheer van uw Google-profiel en de aanpassingen die u vraagt. Geen verborgen kosten." data-ar="استضافة الموقع، النسخ الاحتياطي، التحديثات، إدارة ملفّ Google، والتعديلات التي تطلبها. بلا مصاريف خفيّة.">L'hébergement du site, les sauvegardes, les mises à jour, la tenue de votre fiche Google et les modifications que vous nous demandez. Pas de frais cachés.</p>
       </details>
+      <details class="rv">
+        <summary data-fr="Le domaine et le site m'appartiennent-ils ?" data-nl="Zijn het domein en de website van mij?" data-ar="هل النطاق والموقع ملكي؟">Le domaine et le site m'appartiennent-ils ?</summary>
+        <p data-fr="Oui. Le nom de domaine est enregistré à votre nom dès le départ, et vous n'êtes jamais enfermé : vous arrêtez quand vous voulez." data-nl="Ja. De domeinnaam wordt vanaf het begin op uw naam geregistreerd, en u zit nooit vast: u stopt wanneer u wilt." data-ar="نعم. اسم النطاق مسجَّل باسمك من البداية، ولستَ محبوسًا عندنا: تتوقّف متى شئت.">Oui. Le nom de domaine est enregistré à votre nom dès le départ, et vous n'êtes jamais enfermé : vous arrêtez quand vous voulez.</p>
+      </details>
+      <details class="rv">
+        <summary data-fr="Que se passe-t-il si j'arrête l'abonnement ?" data-nl="Wat gebeurt er als ik het abonnement stop?" data-ar="ماذا يحدث إن أوقفت الاشتراك؟">Que se passe-t-il si j'arrête l'abonnement ?</summary>
+        <p data-fr="Un simple message suffit, sans frais ni préavis. Votre nom de domaine et votre fiche Google restent à votre nom." data-nl="Eén bericht volstaat, zonder kosten of opzegtermijn. Uw domeinnaam en uw Google-profiel blijven op uw naam." data-ar="رسالة واحدة تكفي، بلا رسوم ولا إشعار مسبق. ويبقى نطاقك وملفّ Google باسمك.">Un simple message suffit, sans frais ni préavis. Votre nom de domaine et votre fiche Google restent à votre nom.</p>
+      </details>
+
     </div>
   </div>
 </section>
@@ -270,6 +328,44 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
       <a class="btn ghost" id="telContact" href="tel:+32XXXXXXXX" data-fr="Appeler : +32 XX XX XX XX" data-nl="Bel: +32 XX XX XX XX" data-ar="اتصال: ‎+32 XX XX XX XX">Appeler : +32 XX XX XX XX</a>
     </div>
     <p class="note" data-fr="Nous répondons du lundi au samedi, 9 h – 19 h." data-nl="Wij antwoorden van maandag tot zaterdag, 9 – 19 u." data-ar="نجيب من الاثنين إلى السبت، 9:00 – 19:00.">Nous répondons du lundi au samedi, 9 h – 19 h.</p>
+    <p class="note"><a class="tlink" href="assets/fiche-ninja-fr.pdf" data-fr="Notre offre en une page, à imprimer (PDF) →" data-nl="Ons aanbod op één pagina, om af te drukken (PDF) →" data-ar="عرضنا في صفحة واحدة، للطباعة (PDF) ←">Notre offre en une page, à imprimer (PDF) →</a></p>
+  </div>
+</section>
+
+<section class="sec" id="devis" hidden>
+  <div class="wrap" style="text-align:center">
+    <div class="kick rv" data-fr="Demander votre site" data-nl="Uw website aanvragen" data-ar="اطلب موقعك">Demander votre site</div>
+    <h2 class="rv" data-fr="Laissez vos coordonnées, nous vous rappelons" data-nl="Laat uw gegevens achter, wij bellen u terug" data-ar="اترك بياناتك ونعاود الاتصال بك">Laissez vos coordonnées, nous vous rappelons</h2>
+    <p class="lede rv" style="margin-inline:auto" data-fr="Un formulaire de 30 secondes. Nous vous rappelons sous 24 heures et vous montrons ce que nous ferions pour votre commerce — sans engagement." data-nl="Een formulier van 30 seconden. Wij bellen u binnen 24 uur terug en tonen wat wij voor uw zaak zouden doen — zonder verplichting." data-ar="نموذج من 30 ثانية. نعاود الاتصال بك خلال 24 ساعة ونعرض عليك ما سنفعله لمحلك — بلا التزام.">Un formulaire de 30 secondes. Nous vous rappelons sous 24 heures et vous montrons ce que nous ferions pour votre commerce — sans engagement.</p>
+    <form class="form rv" id="devisForm">
+      <div class="row">
+        <div>
+          <label for="fNom" data-fr="Votre nom" data-nl="Uw naam" data-ar="اسمك">Votre nom</label>
+          <input id="fNom" name="nom" type="text" autocomplete="name" required>
+        </div>
+        <div>
+          <label for="fTel" data-fr="Téléphone / WhatsApp" data-nl="Telefoon / WhatsApp" data-ar="الهاتف / واتساب">Téléphone / WhatsApp</label>
+          <input id="fTel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="+32 4XX XX XX XX" required>
+        </div>
+      </div>
+      <div>
+        <label for="fType" data-fr="Votre commerce" data-nl="Uw zaak" data-ar="محلك">Votre commerce</label>
+        <select id="fType" name="type">
+          <option value="restaurant" data-fr="Restaurant / snack" data-nl="Restaurant / snack" data-ar="مطعم / سناك">Restaurant / snack</option>
+          <option value="salon" data-fr="Salon de coiffure / esthétique" data-nl="Kapsalon / schoonheidssalon" data-ar="حلاق / صالون تجميل">Salon de coiffure / esthétique</option>
+          <option value="magasin" data-fr="Magasin" data-nl="Winkel" data-ar="متجر">Magasin</option>
+          <option value="cabinet" data-fr="Cabinet (médical / paramédical)" data-nl="Praktijk (medisch / paramedisch)" data-ar="عيادة (طبية / شبه طبية)">Cabinet (médical / paramédical)</option>
+          <option value="autre" data-fr="Autre" data-nl="Andere" data-ar="أخرى">Autre</option>
+        </select>
+      </div>
+      <div>
+        <label for="fMsg" data-fr="Un mot sur votre commerce (facultatif)" data-nl="Iets over uw zaak (optioneel)" data-ar="كلمة عن محلك (اختياري)">Un mot sur votre commerce (facultatif)</label>
+        <textarea id="fMsg" name="msg" rows="3"></textarea>
+      </div>
+      <button class="btn" type="submit" data-fr="Envoyer ma demande" data-nl="Mijn aanvraag versturen" data-ar="أرسل طلبي">Envoyer ma demande</button>
+      <p class="ok" hidden data-fr="Merci. Nous vous rappelons très vite." data-nl="Bedankt. Wij bellen u snel terug." data-ar="شكرًا. سنعاود الاتصال بك قريبًا.">Merci. Nous vous rappelons très vite.</p>
+      <p class="note" data-fr="Nous répondons sous 24 h. Ces informations servent uniquement à vous recontacter." data-nl="Wij antwoorden binnen 24 u. Deze gegevens dienen enkel om u te contacteren." data-ar="نجيب خلال 24 ساعة. وهذه المعلومات تُستعمل فقط للتواصل معك.">Nous répondons sous 24 h. Ces informations servent uniquement à vous recontacter.</p>
+    </form>
   </div>
 </section>
 
@@ -285,42 +381,42 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
 </script>
 
 <script>
-/* ===== تبديل اللغة (FR · NL · AR) ===== */
-var WA = ""; // يُملأ برقم واتساب قبل النشر
-var TITLES = {
-  fr: 'NINJA — Sites web pour commerces de quartier · 0 € de création, 20 €/mois',
-  nl: 'NINJA — Websites voor buurtzaken · 0 € opstartkost, daarna 20 €/maand',
-  ar: 'نينجا — مواقع لمحلات الحيّ · 0 € للبناء ثم 20 € شهريًا'
-};
-function setLang(l){
-  if (!TITLES[l]) l = 'fr';
-  document.documentElement.lang = l;
-  document.documentElement.dir = (l === 'ar') ? 'rtl' : 'ltr';
-  document.querySelectorAll('[data-fr]').forEach(function(el){
-    var v = el.getAttribute('data-' + l);
-    if (v != null) el.innerHTML = v;
-  });
-  document.querySelectorAll('[data-setlang]').forEach(function(b){
-    b.setAttribute('aria-current', b.getAttribute('data-setlang') === l ? 'true' : 'false');
-  });
-  document.title = TITLES[l];
-  try { localStorage.setItem('ninja_lang', l); } catch(e){}
-}
-document.querySelectorAll('[data-setlang]').forEach(function(b){
-  b.addEventListener('click', function(){ setLang(b.getAttribute('data-setlang')); });
-});
-try {
-  var q = new URLSearchParams(location.search).get('lang');
-  if (q === 'ar' || q === 'fr' || q === 'nl') setLang(q);
-  else setLang(localStorage.getItem('ninja_lang') || 'fr');
-} catch(e){}
+/* ===== تحويل وسيط اللغة إلى الصفحة الثابتة ===== */
+(function(){try{var q=new URLSearchParams(location.search).get('lang');var M={fr:'.',nl:'nl/',ar:'ar/'};var t=M[q];if(t&&t!=='.')location.replace(t);}catch(e){}})();
 
-/* ===== واتساب ===== */
+/* ===== قنوات التواصل (املأ ما يلزم ثم أعد البناء والنشر) ===== */
+var CHANNELS = {
+  formEndpoint: "",  /* رابط استقبال النموذج (POST JSON) — فارغ = قسم النموذج يبقى مخفيًّا */
+  whatsapp: ""       /* رقم واتساب بصيغة دولية بلا + — فارغ = أزرار واتساب معطّلة */
+};
 (function(){
-  if (WA){
-    var msg = encodeURIComponent("Bonjour, je vous appelle au sujet du site web de mon commerce.");
-    document.querySelectorAll('#waHero,#waContact').forEach(function(a){ a.href = 'https://wa.me/' + WA + '?text=' + msg; a.target = '_blank'; a.rel = 'noopener'; });
+  var wa=CHANNELS.whatsapp, sec=document.getElementById('devis');
+  if (wa){
+    document.querySelectorAll('#waHero,#waContact').forEach(function(a){
+      var lang=document.documentElement.lang;
+      var txt={fr:"Bonjour, je vous contacte au sujet du site web de mon commerce.",nl:"Hallo, ik contacteer u over de website van mijn zaak.",ar:"مرحبًا، أتواصل معك بخصوص موقع محلي."}[lang]||"Bonjour.";
+      a.href='https://wa.me/'+wa+'?text='+encodeURIComponent(txt); a.target='_blank'; a.rel='noopener';
+    });
+    var tel=document.getElementById('telContact');
+    if (tel){ tel.href='tel:+'+wa; var t2={fr:'Appeler : +'+wa,nl:'Bellen: +'+wa,ar:'اتصال: ‎+'+wa}[document.documentElement.lang]; if(t2) tel.textContent=t2; }
   }
+  if (!sec) return;
+  if (!CHANNELS.formEndpoint && !wa){ sec.hidden = true; return; }
+  sec.hidden = false;
+  var f=document.getElementById('devisForm'); if(!f) return;
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var d=new FormData(f), lang=document.documentElement.lang;
+    var head={fr:'Nouvelle demande — ',nl:'Nieuwe aanvraag — ',ar:'طلب جديد — '}[lang]||'';
+    var msg=head+(d.get('nom')||'')+' · '+(d.get('tel')||'')+' · '+(d.get('type')||'')+(d.get('msg')?' · '+d.get('msg'):'');
+    function done(){ f.reset(); var o=f.querySelector('.ok'); if(o) o.hidden=false; }
+    if (CHANNELS.formEndpoint){
+      fetch(CHANNELS.formEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.fromEntries(d))})
+        .then(function(r){ if(r.ok) done(); }).catch(function(){});
+    } else if (wa){
+      window.open('https://wa.me/'+wa+'?text='+encodeURIComponent(msg),'_blank','noopener'); done();
+    }
+  });
 })();
 
 /* ===== ظهور تدريجي ===== */

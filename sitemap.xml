@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://ninja-sites.github.io/ninja-service/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ninja-sites.github.io/ninja-service/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ninja-sites.github.io/ninja-service/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ninja-sites.github.io/ninja-service/ar/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://ninja-sites.github.io/ninja-service/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ninja-sites.github.io/ninja-service/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ninja-sites.github.io/ninja-service/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ninja-sites.github.io/ninja-service/ar/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://ninja-sites.github.io/ninja-service/ar/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://ninja-sites.github.io/ninja-service/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://ninja-sites.github.io/ninja-service/nl/"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://ninja-sites.github.io/ninja-service/ar/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>
