@@ -168,6 +168,7 @@ def build_lang(src, lang, out_path):
 
     # 5) chemins relatifs (pages en sous-dossier)
     s = s.replace('src="images/', 'src="../images/').replace('href="assets/', 'href="../assets/')
+    s = s.replace('href="manifest.webmanifest"', 'href="../manifest.webmanifest"')
     s = s.replace("fiche-ninja-fr.pdf", "fiche-ninja-%s.pdf" % lang)
 
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
