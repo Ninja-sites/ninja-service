@@ -22,20 +22,20 @@ MASTER = os.path.join(ROOT, "index.html")
 
 META = {
     "fr": {
-        "title": "NINJA — Sites web pour commerces de quartier · 0 € de création, 20 €/mois",
-        "desc": "Votre commerce mérite d'être trouvé. Nous créons votre site professionnel : 0 € de création, puis 20 €/mois tout compris — hébergement, mises à jour, Google, WhatsApp. Bruxelles.",
+        "title": "NINJA — Démo gratuite de votre site · 0 € de création, 20 €/mois",
+        "desc": "Démo gratuite de votre site avant tout paiement. Ensuite : 0 € de création, 20 €/mois tout compris — hébergement, mises à jour, Google, WhatsApp. Bruxelles.",
         "locale": "fr_BE",
         "dir": "ltr",
     },
     "nl": {
-        "title": "NINJA — Websites voor buurtzaken · 0 € opstartkost, daarna 20 €/maand",
-        "desc": "Uw zaak verdient het om gevonden te worden. Wij maken uw professionele website: 0 € opstartkost, daarna 20 €/maand alles inbegrepen — hosting, updates, Google, WhatsApp. Brussel.",
+        "title": "NINJA — Gratis demo van uw website · 0 € opstartkost, daarna 20 €/maand",
+        "desc": "Gratis demo van uw website vóór elke betaling. Daarna: 0 € opstartkost, 20 €/maand alles inbegrepen — hosting, updates, Google, WhatsApp. Brussel.",
         "locale": "nl_BE",
         "dir": "ltr",
     },
     "ar": {
-        "title": "نينجا — مواقع لمحلات الحيّ · 0 € للبناء ثم 20 € شهريًا",
-        "desc": "محلّك يستحقّ أن يُوجَد. نبني موقعك الاحترافي: 0 € للبناء ثم 20 € شهريًّا شاملة كل شيء — الاستضافة، التحديثات، جوجل، واتساب. بروكسل.",
+        "title": "نينجا — نسخة تجريبية مجانية من موقعك · 0 € للبناء ثم 20 € شهريًا",
+        "desc": "نسخة تجريبية مجانية من موقعك قبل أي دفع. ثم: 0 € للبناء و20 € شهريًّا شاملة كل شيء — الاستضافة، التحديثات، جوجل، واتساب. بروكسل.",
         "locale": "ar_BE",
         "dir": "rtl",
     },
@@ -112,7 +112,17 @@ def localize(src, lang):
         edits.append((tag_start, content_end, clean + value))
     for start, end, rep in sorted(edits, key=lambda e: e[0], reverse=True):
         src = src[:start] + rep + src[end:]
-    assert len(edits) == 97, "expected 97 localized elements, got %d" % len(edits)
+    assert len(edits) >= 99, "expected at least 99 localized elements, got %d" % len(edits)
+    # placeholder localisé pour les champs de saisie (data-<lang>-placeholder)
+    def fix_tag(mo):
+        tag = mo.group(0)
+        m = re.search(r'data-%s-placeholder="([^"]*)"' % lang, tag)
+        if not m:
+            return tag
+        tag = re.sub(r'\s+data-(fr|nl|ar)-placeholder="[^"]*"', '', tag)
+        return re.sub(r'placeholder="[^"]*"', 'placeholder="%s"' % m.group(1), tag)
+    src = re.sub(r'<input[^>]*data-%s-placeholder[^>]*>' % lang, fix_tag, src)
+    src = re.sub(r'\s+data-(fr|nl|ar)-placeholder="[^"]*"', "", src)
     return src
 
 

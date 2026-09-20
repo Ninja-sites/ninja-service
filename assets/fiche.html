@@ -6,37 +6,38 @@
 <meta name="robots" content="noindex">
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;700&family=El+Messiri:wght@600;700&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
-  @page{size:A4;margin:12mm}
+  @page{size:A4;margin:10mm}
   *{box-sizing:border-box;margin:0;padding:0}
-  body{font-family:'Manrope',system-ui,sans-serif;color:#141a21;font-size:11.4pt;line-height:1.5;background:#fff}
+  body{font-family:'Manrope',system-ui,sans-serif;color:#141a21;font-size:10.2pt;line-height:1.42;background:#fff}
   .top{display:flex;align-items:center;justify-content:space-between;border-bottom:3px solid #ff4d3d;padding-bottom:10px}
   .brand{font-family:'Sora',system-ui,sans-serif;font-weight:700;letter-spacing:.05em;font-size:17pt;display:flex;align-items:center;gap:9px}
   .brand i{width:10px;height:10px;border-radius:50%;background:#ff4d3d;display:inline-block}
-  .top .sub{color:#5b6572;font-size:9.6pt;text-align:end}
-  h1{font-family:'Sora',system-ui,sans-serif;font-size:24pt;line-height:1.15;margin:20px 0 6px;color:#0c0f13}
+  .top .sub{color:#5b6572;font-size:9.2pt;text-align:end}
+  h1{font-family:'Sora',system-ui,sans-serif;font-size:20.5pt;line-height:1.12;margin:13px 0 5px;color:#0c0f13}
   h1 em{font-style:normal;color:#ff4d3d}
-  .lede{color:#414b57;font-size:11pt;margin-bottom:16px}
-  .price{display:flex;gap:10px;margin:14px 0 4px}
-  .box{flex:1;border:1.4pt solid #dfe3e8;border-radius:10px;padding:12px 14px}
+  .lede{color:#414b57;font-size:10pt;margin-bottom:11px}
+  .price{display:flex;gap:9px;margin:11px 0 2px}
+  .box{flex:1;border:1.4pt solid #dfe3e8;border-radius:10px;padding:9px 11px}
   .box.hi{border-color:#ff4d3d;background:#fff6f4}
-  .num{font-family:'Sora',system-ui,sans-serif;font-size:22pt;font-weight:700;line-height:1}
-  .lbl{font-weight:700;margin-top:5px}
-  .hint{color:#5b6572;font-size:9.4pt}
-  h2{font-family:'Sora',system-ui,sans-serif;font-size:13pt;margin:20px 0 8px;color:#0c0f13}
+  .num{font-family:'Sora',system-ui,sans-serif;font-size:18pt;font-weight:700;line-height:1}
+  .num span{font-size:.5em;font-weight:600;color:#5b6572}
+  .lbl{font-weight:700;margin-top:5px;font-size:10.4pt}
+  .hint{color:#5b6572;font-size:9.2pt}
+  h2{font-family:'Sora',system-ui,sans-serif;font-size:12pt;margin:13px 0 6px;color:#0c0f13}
   ul{list-style:none;columns:2;column-gap:22px}
-  li{position:relative;padding-inline-start:16px;margin-bottom:5px;break-inside:avoid}
+  li{position:relative;padding-inline-start:15px;margin-bottom:3px;break-inside:avoid}
   li:before{content:"✓";position:absolute;inset-inline-start:0;color:#ff4d3d;font-weight:700}
   .steps{display:flex;gap:10px}
-  .steps div{flex:1;background:#f5f6f8;border-radius:10px;padding:10px 12px}
+  .steps div{flex:1;background:#f5f6f8;border-radius:9px;padding:8px 10px}
   .steps b{display:block;margin-bottom:3px}
-  .steps p{font-size:9.8pt;color:#414b57}
-  .guarantee{border:1.4pt dashed #ff4d3d;background:#fff6f4;border-radius:10px;padding:12px 14px;margin-top:16px}
+  .steps p{font-size:9.1pt;color:#414b57;margin:0}
+  .guarantee{border:1.4pt dashed #ff4d3d;background:#fff6f4;border-radius:9px;padding:9px 11px;margin-top:11px}
   .guarantee b{color:#c8341f}
-  .faq{margin-top:18px}
-  .faq div{margin-bottom:7px}
+  .faq{margin-top:11px}
+  .faq div{margin-bottom:4px}
   .faq b{display:block;color:#0c0f13}
-  .contact{margin-top:18px;border-top:3px solid #ff4d3d;padding-top:12px;display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
-  .contact .big{font-family:'Sora',system-ui,sans-serif;font-size:13pt;font-weight:700}
+  .contact{margin-top:11px;border-top:3px solid #ff4d3d;padding-top:9px;display:flex;justify-content:space-between;align-items:flex-end;gap:16px}
+  .contact .big{font-family:'Sora',system-ui,sans-serif;font-size:12.6pt;font-weight:700}
   .contact .det{color:#414b57;font-size:10pt}
   .contact .url{color:#5b6572;font-size:9.6pt;text-align:end}
   html[lang="ar"] .brand,html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] .num,html[lang="ar"] .contact .big{font-family:'El Messiri',system-ui,sans-serif}
@@ -50,44 +51,49 @@
 </div>
 
 <h1 data-fr="Votre commerce mérite d'être <em>trouvé</em>." data-nl="Uw zaak verdient het om <em>gevonden</em> te worden." data-ar="محلّك يستحقّ أن <em>يُوجَد</em>.">Votre commerce mérite d'être <em>trouvé</em>.</h1>
-<p class="lede" data-fr="Vos clients ne cherchent plus votre commerce comme avant : ils le demandent à Google et à ChatGPT. Ces moteurs lisent les sites web et les données Google — pas Instagram, pas Facebook." data-nl="Uw klanten zoeken uw zaak niet meer zoals vroeger: ze vragen het aan Google en ChatGPT. Die zoeken in websites en Google-gegevens — niet op Instagram of Facebook." data-ar="زبائنك لم يعودوا يبحثون عن محلك كما قبل: يسألون جوجل وChatGPT. وهذه المحرّكات تقرأ المواقع وبيانات جوجل — لا إنستغرام ولا فيسبوك.">Vos clients ne cherchent plus votre commerce comme avant : ils le demandent à Google et à ChatGPT. Ces moteurs lisent les sites web et les données Google — pas Instagram, pas Facebook.</p>
+<p class="lede" data-fr="Nous créons d'abord une <b>démonstration gratuite</b> de votre site. Si elle vous plaît, le site passe en ligne — et vous ne payez rien avant." data-nl="Wij maken eerst een <b>gratis demo</b> van uw website. Bevalt hij? Dan gaat de site online — en u betaalt niets vooraf." data-ar="نُصمّم لك أولًا <b>نسخة تجريبية مجانية</b> من موقعك. أعجبتك؟ يُنشَر الموقع — ولا تدفع شيئًا مقدّمًا.">Nous créons d'abord une <b>démonstration gratuite</b> de votre site. Si elle vous plaît, le site passe en ligne — et vous ne payez rien avant.</p>
 
 <div class="price">
   <div class="box">
     <div class="num">0 €</div>
-    <div class="lbl" data-fr="Création de votre site" data-nl="Uw website bouwen" data-ar="بناء موقعك">Création de votre site</div>
-    <div class="hint" data-fr="Aucun frais au départ, pas d'acompte, pas de devis surprise." data-nl="Geen enkele kost vooraf, geen voorschot, geen verrassingsfactuur." data-ar="بلا أي دفع في البداية، لا دفعة مقدّمة ولا فاتورة مفاجئة.">Aucun frais au départ, pas d'acompte, pas de devis surprise.</div>
+    <div class="lbl" data-fr="Création et démonstration" data-nl="Ontwerp en demo" data-ar="البناء والنسخة التجريبية">Création et démonstration</div>
+    <div class="hint" data-fr="Rien à avancer. Pas d'acompte, pas de devis surprise." data-nl="Niets vooraf. Geen voorschot, geen verrassingsfactuur." data-ar="لا شيء مقدّمًا. لا دفعة ولا فاتورة مفاجئة.">Rien à avancer. Pas d'acompte, pas de devis surprise.</div>
   </div>
   <div class="box hi">
-    <div class="num">20 €<span style="font-size:.5em"> / <span data-fr="mois" data-nl="maand" data-ar="شهر">mois</span></span></div>
+    <div class="num">20 €<span> / <span data-fr="mois" data-nl="maand" data-ar="شهر">mois</span></span></div>
     <div class="lbl" data-fr="Tout compris, chaque mois" data-nl="Alles inbegrepen, elke maand" data-ar="شاملًا كل شيء، كل شهر">Tout compris, chaque mois</div>
     <div class="hint" data-fr="Hébergement, sauvegardes, mises à jour, fiche Google, modifications." data-nl="Hosting, back-ups, updates, Google-profiel, aanpassingen." data-ar="الاستضافة، النسخ الاحتياطي، التحديثات، ملفّ Google، والتعديلات.">Hébergement, sauvegardes, mises à jour, fiche Google, modifications.</div>
   </div>
+  <div class="box">
+    <div class="num">25 €<span> / <span data-fr="an" data-nl="jaar" data-ar="سنة">an</span></span></div>
+    <div class="lbl" data-fr="Le domaine, si vous le voulez à vous" data-nl="Het domein, als u het wilt bezitten" data-ar="النطاق، إن أردت أن يصبح ملكك">Le domaine, si vous le voulez à vous</div>
+    <div class="hint" data-fr="Facultatif, dès le premier mois. Sinon le domaine reste chez nous." data-nl="Optioneel, vanaf de eerste maand. Anders blijft het domein bij ons." data-ar="اختياري، من الشهر الأول. وإن لم ترده يبقى النطاق عندنا.">Facultatif, dès le premier mois. Sinon le domaine reste chez nous.</div>
+  </div>
 </div>
 
-<h2 data-fr="Ce qui est inclus" data-nl="Wat inbegrepen is" data-ar="ما يشمله الاشتراك">Ce qui est inclus</h2>
+<h2 data-fr="Ce qui est inclus dans l'abonnement" data-nl="Wat inbegrepen is in het abonnement" data-ar="ما يشمله الاشتراك">Ce qui est inclus dans l'abonnement</h2>
 <ul>
   <li data-fr="Site professionnel jusqu'à 5 pages, parfait sur téléphone" data-nl="Professionele website tot 5 pagina's, perfect op de telefoon" data-ar="موقع احترافي حتى 5 صفحات، ممتاز على الهاتف">Site professionnel jusqu'à 5 pages, parfait sur téléphone</li>
-  <li data-fr="Nom de domaine à votre nom" data-nl="Domeinnaam op uw naam" data-ar="اسم النطاق باسمك أنت">Nom de domaine à votre nom</li>
+  <li data-fr="Nom de domaine enregistré aux coordonnées de votre commerce" data-nl="Domeinnaam geregistreerd op de gegevens van uw zaak" data-ar="اسم النطاق مسجَّل ببيانات محلك">Nom de domaine enregistré aux coordonnées de votre commerce</li>
   <li data-fr="Hébergement et sauvegardes automatiques" data-nl="Hosting en automatische back-ups" data-ar="الاستضافة والنسخ الاحتياطي التلقائي">Hébergement et sauvegardes automatiques</li>
   <li data-fr="Fiche Google et Google Maps tenues à jour" data-nl="Google-profiel en Google Maps up-to-date" data-ar="ملفّ Google وخرائط جوجل محدّثان">Fiche Google et Google Maps tenues à jour</li>
-  <li data-fr="Bouton WhatsApp et appel direct" data-nl="WhatsApp-knop en direct bellen" data-ar="زرّ واتساب واتصال مباشر">Bouton WhatsApp et appel direct</li>
+  <li data-fr="Bouton WhatsApp et écriture directe depuis le site" data-nl="WhatsApp-knop en direct schrijven vanaf de site" data-ar="زرّ واتساب والكتابة مباشرة من الموقع">Bouton WhatsApp et écriture directe depuis le site</li>
   <li data-fr="Modifications chaque mois + données structurées pour Google et les moteurs IA" data-nl="Elke maand aanpassingen + gestructureerde data voor Google en AI" data-ar="تعديلات كل شهر + بيانات منظّمة لجوجل ومحرّكات الذكاء الاصطناعي">Modifications chaque mois + données structurées pour Google et les moteurs IA</li>
 </ul>
 
 <h2 data-fr="Comment ça marche" data-nl="Hoe het werkt" data-ar="كيف نعمل">Comment ça marche</h2>
 <div class="steps">
   <div>
-    <b data-fr="1. Un appel de 15 minutes" data-nl="1. Een gesprek van 15 minuten" data-ar="1. مكالمة 15 دقيقة">1. Un appel de 15 minutes</b>
-    <p data-fr="Vous nous parlez de votre commerce ; nous vous montrons ce que nous ferions, avant tout engagement." data-nl="U vertelt over uw zaak; wij tonen wat wij zouden doen, vóór elke verbintenis." data-ar="تحدّثنا عن محلك، ونُريك ما سنفعله، قبل أي التزام.">Vous nous parlez de votre commerce ; nous vous montrons ce que nous ferions, avant tout engagement.</p>
+    <b data-fr="1. Vous laissez votre demande" data-nl="1. U laat uw aanvraag achter" data-ar="1. تترك طلبك">1. Vous laissez votre demande</b>
+    <p data-fr="Le nom, l'adresse et l'activité de votre commerce, par le formulaire du site. Pas d'appel, pas de rendez-vous." data-nl="Naam, adres en activiteit van uw zaak, via het formulier op de site. Geen telefoongesprek, geen afspraak." data-ar="اسم محلك وعنوانه ونشاطه من نموذج الموقع. بلا مكالمة وبلا موعد.">Le nom, l'adresse et l'activité de votre commerce, par le formulaire du site. Pas d'appel, pas de rendez-vous.</p>
   </div>
   <div>
-    <b data-fr="2. Nous construisons" data-nl="2. Wij bouwen" data-ar="2. نحن نبني">2. Nous construisons</b>
-    <p data-fr="Vous envoyez vos photos et vos informations. Nous nous occupons de tout le reste." data-nl="U stuurt uw foto's en gegevens. Wij doen al de rest." data-ar="ترسل صورك ومعلوماتك، ونتولّى نحن كل الباقي.">Vous envoyez vos photos et vos informations. Nous nous occupons de tout le reste.</p>
+    <b data-fr="2. Nous créons votre démonstration" data-nl="2. Wij maken uw demo" data-ar="2. نُصمّم نسختك التجريبية">2. Nous créons votre démonstration</b>
+    <p data-fr="Vous recevez par écrit un lien vers une démonstration de votre site — sans aucun paiement." data-nl="U ontvangt schriftelijk een link naar een demo van uw website — zonder enige betaling." data-ar="يصلك كتابيًّا رابط نسخة تجريبية من موقعك — بلا أي دفع.">Vous recevez par écrit un lien vers une démonstration de votre site — sans aucun paiement.</p>
   </div>
   <div>
-    <b data-fr="3. Votre commerce est en ligne" data-nl="3. Uw zaak staat online" data-ar="3. محلك يصبح على الإنترنت">3. Votre commerce est en ligne</b>
-    <p data-fr="Le site vit, et nous le mettons à jour chaque mois avec vous." data-nl="De website leeft, en wij werken hem elke maand met u bij." data-ar="الموقع يعمل، ونحدّثه كل شهر معك.">Le site vit, et nous le mettons à jour chaque mois avec vous.</p>
+    <b data-fr="3. Elle vous plaît : mise en ligne" data-nl="3. Bevalt hij: de site gaat online" data-ar="3. أعجبتك؟ يُنشَر موقعك">3. Elle vous plaît : mise en ligne</b>
+    <p data-fr="Vous activez l'abonnement de 20 €/mois et nous faisons vivre le site chaque mois, avec vous." data-nl="U activeert het abonnement van 20 €/maand en wij houden de site elke maand levend, samen met u." data-ar="تُفعّل الاشتراك (20 €/شهر) ونُبقي الموقع حيًّا كل شهر معك.">Vous activez l'abonnement de 20 €/mois et nous faisons vivre le site chaque mois, avec vous.</p>
   </div>
 </div>
 
@@ -98,17 +104,19 @@
 
 <div class="faq">
   <div><b data-fr="Dois-je m'occuper de quelque chose ?" data-nl="Moet ik zelf iets doen?" data-ar="هل عليّ أن أتولّى شيئًا؟">Dois-je m'occuper de quelque chose ?</b>
-    <span data-fr="Non. Vous nous donnez les informations et les photos ; le reste est notre travail." data-nl="Nee. U geeft ons de gegevens en de foto's; de rest is ons werk." data-ar="لا. تعطينا المعلومات والصور، والباقي عملنا نحن.">Non. Vous nous donnez les informations et les photos ; le reste est notre travail.</span></div>
+    <span data-fr="Non. Vous nous donnez le nom, l'adresse et l'activité de votre commerce ; le reste est notre travail." data-nl="Nee. U geeft ons naam, adres en activiteit van uw zaak; de rest is ons werk." data-ar="لا. تعطينا اسم محلك وعنوانه ونشاطه، والباقي عملنا.">Non. Vous nous donnez le nom, l'adresse et l'activité de votre commerce ; le reste est notre travail.</span></div>
   <div><b data-fr="Le domaine m'appartient-il ?" data-nl="Is het domein van mij?" data-ar="هل النطاق ملكي؟">Le domaine m'appartient-il ?</b>
-    <span data-fr="Oui : le nom de domaine est enregistré à votre nom dès le premier jour, et vous arrêtez quand vous voulez." data-nl="Ja: de domeinnaam wordt vanaf dag één op uw naam geregistreerd, en u stopt wanneer u wilt." data-ar="نعم: اسم النطاق مسجَّل باسمك من اليوم الأول، وتتوقّف متى شئت.">Oui : le nom de domaine est enregistré à votre nom dès le premier jour, et vous arrêtez quand vous voulez.</span></div>
+    <span data-fr="Le contenu du site est à vous. Le domaine est enregistré à vos coordonnées mais reste à nous tant qu'il n'est pas payé : 25 €/an, dès le premier mois." data-nl="De inhoud van de website is van u. Het domein staat op uw gegevens maar blijft het onze tot u het betaalt: 25 €/jaar, vanaf de eerste maand." data-ar="محتوى الموقع لك. أمّا النطاق فمسجَّل ببياناتك ويبقى ملكنا حتى تدفع ثمنه: 25 € سنويًّا من الشهر الأول.">Le contenu du site est à vous. Le domaine est enregistré à vos coordonnées mais reste à nous tant qu'il n'est pas payé : 25 €/an, dès le premier mois.</span></div>
+  <div><b data-fr="Et si j'arrête ?" data-nl="En als ik stop?" data-ar="وإن توقّفت؟">Et si j'arrête ?</b>
+    <span data-fr="Un simple message suffit. Le domaine reste chez nous, inutilisé, jusqu'à la fin de son enregistrement — ensuite il redevient libre." data-nl="Eén bericht volstaat. Het domein blijft bij ons, ongebruikt, tot het einde van de registratie — daarna komt het weer vrij." data-ar="رسالة واحدة تكفي. يبقى النطاق عندنا دون استعمال حتى نهاية مدّة حجزه، ثم يعود حرًّا.">Un simple message suffit. Le domaine reste chez nous, inutilisé, jusqu'à la fin de son enregistrement — ensuite il redevient libre.</span></div>
   <div><b data-fr="En combien de temps ?" data-nl="Hoe snel?" data-ar="في كم من الوقت؟">En combien de temps ?</b>
-    <span data-fr="Quelques jours après l'appel, selon la rapidité avec laquelle nous recevons vos photos et informations." data-nl="Enkele dagen na het gesprek, afhankelijk van hoe snel wij uw foto's en gegevens ontvangen." data-ar="أيام قليلة بعد المكالمة، بحسب سرعة وصول صورك ومعلوماتك.">Quelques jours après l'appel, selon la rapidité avec laquelle nous recevons vos photos et informations.</span></div>
+    <span data-fr="La démonstration arrive en quelques jours ; après activation, la mise en ligne prend un ou deux jours." data-nl="De demo komt binnen enkele dagen; na activering gaat de site binnen één à twee dagen online." data-ar="تصل النسخة التجريبية في أيام قليلة؛ وبعد التفعيل يُنشَر الموقع خلال يوم أو يومين.">La démonstration arrive en quelques jours ; après activation, la mise en ligne prend un ou deux jours.</span></div>
 </div>
 
 <div class="contact">
   <div>
-    <div class="big" data-fr="Parlons de votre commerce" data-nl="Laten we over uw zaak praten" data-ar="لنتحدّث عن محلك">Parlons de votre commerce</div>
-    <div class="det" data-fr="WhatsApp / téléphone : +32 XX XX XX XX" data-nl="WhatsApp / telefoon: +32 XX XX XX XX" data-ar="واتساب / هاتف: ‎+32 XX XX XX XX">WhatsApp / téléphone : +32 XX XX XX XX</div>
+    <div class="big" data-fr="Demandez votre démonstration" data-nl="Vraag uw demo aan" data-ar="اطلب نسختك التجريبية">Demandez votre démonstration</div>
+    <div class="det" data-fr="Formulaire sur le site · réponse par écrit sous 24 h" data-nl="Formulier op de site · schriftelijk antwoord binnen 24 u" data-ar="النموذج على الموقع · ردّ كتابي خلال 24 ساعة">Formulaire sur le site · réponse par écrit sous 24 h</div>
   </div>
   <div class="url">ninja-sites.github.io/ninja-service</div>
 </div>

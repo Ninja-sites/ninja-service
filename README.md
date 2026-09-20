@@ -36,9 +36,19 @@ var CHANNELS = {
 };
 ```
 
-- `whatsapp` renseigné ⇒ les boutons WhatsApp et le bouton d'appel du site deviennent fonctionnels (message pré-rempli dans la langue du visiteur).
-- `formEndpoint` renseigné ⇒ le formulaire « demander votre site » s'affiche et envoie `{nom, tel, type, msg}` en JSON.
-- Tant que les deux sont vides, la section formulaire reste masquée : aucun visiteur ne peut envoyer une demande dans le vide.
+- `whatsapp` renseigné ⇒ le formulaire ouvre WhatsApp sur le téléphone du visiteur avec la demande déjà rédigée (`nom · activité · adresse · e-mail · téléphone · langue · message`).
+- `formEndpoint` renseigné ⇒ le formulaire envoie la même demande en JSON (POST).
+- Tant que les deux sont vides, le bouton d'envoi reste **désactivé** avec une note honnête (« envoi en cours d'activation ») : aucun visiteur ne peut envoyer une demande dans le vide, et rien n'est perdu silencieusement.
+
+## Fonctionnement commercial reflété par le site
+1. Le commerçant **laisse sa demande** (formulaire : nom, activité, adresse, e-mail, téléphone, langue de contact, message). **Pas d'appel, pas de rendez-vous.**
+2. **Nous créons une démonstration gratuite** de son site et lui envoyons le lien par écrit.
+3. S'il l'active : abonnement **20 €/mois tout compris** ; **0 € de création**.
+4. **Domaine** : enregistré aux coordonnées du commerce mais **propriété du prestataire** tant qu'il n'est pas payé — **25 €/an** (montant qui suit le prix du service d'enregistrement), facturé dès le premier mois si le client veut en être propriétaire. En cas d'arrêt, le domaine reste chez nous, inutilisé, jusqu'à la fin de son enregistrement, puis redevient libre.
+
+## Autres fichiers
+- `manifest.webmanifest` · `assets/favicon.svg` + `assets/icon-*.png` : icône d'onglet et d'écran d'accueil.
+- `404.html` : page d'erreur trilingue servie automatiquement par GitHub Pages.
 
 ## Fiches imprimables & images de partage
 

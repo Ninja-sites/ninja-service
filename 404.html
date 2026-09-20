@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#0c0f13">
+<title>Page introuvable — NINJA</title>
+<link rel="icon" href="/ninja-service/assets/favicon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;700&family=El+Messiri:wght@600;700&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0c0f13;--cream:#f3efe7;--mut:#9aa3af;--red:#ff4d3d;--line:rgba(255,255,255,.09)}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{min-height:100vh;display:flex;align-items:center;justify-content:center;background:var(--ink);color:var(--cream);
+       font-family:'Manrope',system-ui,sans-serif;text-align:center;padding:32px;
+       background-image:radial-gradient(circle at 82% 10%,rgba(255,77,61,.22),transparent 45%)}
+  .wrap{max-width:620px}
+  .brand{font-family:'Sora',system-ui,sans-serif;font-weight:700;letter-spacing:.06em;font-size:1.1rem;display:flex;align-items:center;gap:9px;justify-content:center;margin-bottom:26px}
+  .brand i{width:10px;height:10px;background:var(--red);border-radius:50%;display:inline-block}
+  .code{font-family:'Sora',system-ui,sans-serif;font-size:clamp(3rem,12vw,5rem);font-weight:700;color:var(--red);line-height:1}
+  h1{font-family:'Sora',system-ui,sans-serif;font-size:clamp(1.3rem,4vw,1.9rem);margin:14px 0 10px;font-weight:600}
+  p{color:var(--mut);font-size:1.02rem;margin-bottom:8px}
+  .btn{display:inline-flex;align-items:center;gap:10px;background:var(--red);color:#fff;text-decoration:none;font-weight:700;
+       padding:14px 24px;border-radius:999px;margin-top:22px;transition:.25s}
+  .btn:hover{background:#ff6a55}
+  .langs{margin-top:26px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap;font-size:.9rem}
+  .langs a{color:var(--mut);text-decoration:none;border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+  .langs a:hover{border-color:var(--red);color:var(--red)}
+  html[lang="ar"] .brand,html[lang="ar"] h1,html[lang="ar"] .code{font-family:'El Messiri',system-ui,sans-serif}
+  html[lang="ar"] body{font-family:'Almarai',system-ui,sans-serif}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand"><i></i>NINJA</div>
+  <div class="code">404</div>
+  <h1 data-fr="Cette page n'existe pas (ou plus)" data-nl="Deze pagina bestaat niet (of niet meer)" data-ar="هذه الصفحة غير موجودة">Cette page n'existe pas (ou plus)</h1>
+  <p data-fr="Le site de votre commerce, lui, peut exister : nous vous en envoyons une démonstration gratuite." data-nl="De website van uw zaak kan wel bestaan: wij sturen u graag een gratis demo." data-ar="أمّا موقع محلك فيمكن أن يوجد: نرسل لك نسخة تجريبية مجانية.">Le site de votre commerce, lui, peut exister : nous vous en envoyons une démonstration gratuite.</p>
+  <a class="btn" href="/ninja-service/" data-fr="Retour à l'accueil" data-nl="Terug naar de startpagina" data-ar="العودة إلى الصفحة الرئيسية">Retour à l'accueil</a>
+  <div class="langs">
+    <a href="/ninja-service/" hreflang="fr">Français</a>
+    <a href="/ninja-service/nl/" hreflang="nl">Nederlands</a>
+    <a href="/ninja-service/ar/" hreflang="ar">العربية</a>
+  </div>
+</div>
+<script>
+(function(){
+  var l=(new URLSearchParams(location.search).get('lang')||'fr');
+  if(['fr','nl','ar'].indexOf(l)<0) l='fr';
+  document.documentElement.lang=l;
+  document.documentElement.dir=(l==='ar')?'rtl':'ltr';
+  document.querySelectorAll('[data-fr]').forEach(function(el){
+    var v=el.getAttribute('data-'+l); if(v!=null) el.innerHTML=v;
+  });
+})();
+</script>
+</body>
+</html>

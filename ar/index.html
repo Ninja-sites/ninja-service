@@ -2,11 +2,16 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="utf-8">
+<meta name="theme-color" content="#0c0f13">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="../assets/icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>نينجا — مواقع لمحلات الحيّ · 0 € للبناء ثم 20 € شهريًا</title>
-<meta name="description" content="محلّك يستحقّ أن يُوجَد. نبني موقعك الاحترافي: 0 € للبناء ثم 20 € شهريًّا شاملة كل شيء — الاستضافة، التحديثات، جوجل، واتساب. بروكسل.">
-<meta property="og:title" content="نينجا — مواقع لمحلات الحيّ · 0 € للبناء ثم 20 € شهريًا">
-<meta property="og:description" content="محلّك يستحقّ أن يُوجَد. نبني موقعك الاحترافي: 0 € للبناء ثم 20 € شهريًّا شاملة كل شيء — الاستضافة، التحديثات، جوجل، واتساب. بروكسل.">
+<title>نينجا — نسخة تجريبية مجانية من موقعك · 0 € للبناء ثم 20 € شهريًا</title>
+<meta name="description" content="نسخة تجريبية مجانية من موقعك قبل أي دفع. ثم: 0 € للبناء و20 € شهريًّا شاملة كل شيء — الاستضافة، التحديثات، جوجل، واتساب. بروكسل.">
+<meta property="og:title" content="نينجا — نسخة تجريبية مجانية من موقعك · 0 € للبناء ثم 20 € شهريًا">
+<meta property="og:description" content="نسخة تجريبية مجانية من موقعك قبل أي دفع. ثم: 0 € للبناء و20 € شهريًّا شاملة كل شيء — الاستضافة، التحديثات، جوجل، واتساب. بروكسل.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://ninja-sites.github.io/ninja-service/ar/">
 <link rel="alternate" hreflang="fr" href="https://ninja-sites.github.io/ninja-service/">
@@ -134,6 +139,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
 .form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--red)}
 .form textarea{resize:vertical}
 .form .btn{justify-self:start}
+.form .btn[disabled]{opacity:.55;cursor:not-allowed;background:var(--ink3);color:var(--mut)}
 .form .ok{color:#7ee2a8;font-size:.95rem;margin:0}
 .form .note{margin:0}
 .tlink{color:var(--red);text-decoration:none}
@@ -165,15 +171,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
   <div class="wrap">
     <div class="kick">مواقع لمحلات الحيّ · بروكسل</div>
     <h1 class="rv">محلّك يستحقّ أن <em>يُوجَد</em>.</h1>
-    <p class="sub rv">نبني موقعك الاحترافي. <b>0 € للبناء</b> — ثم <b>20 €/شهر</b> شاملًا كل شيء: الاستضافة، التحديثات، جوجل، واتساب.</p>
+    <p class="sub rv">نُصمّم لك أولًا <b>نسخة تجريبية مجانية</b> من موقعك. أعجبتك؟ <b>0 € للبناء</b> ثم <b>20 €/شهر</b> شاملًا كل شيء — الاستضافة، التحديثات، جوجل، واتساب.</p>
     <div class="btns">
-      <a class="btn" id="waHero" href="#">تحدّث على واتساب</a>
+      <a class="btn" id="ctaDemo" href="#devis">اطلب نسختي التجريبية</a>
       <a class="btn ghost" href="#offre">ما يشمله الاشتراك</a>
     </div>
     <div class="strip">
       <span><b>0 €</b> للبناء</span>
       <span><b>20 €</b> شهريًا شاملة كل شيء</span>
-      <span>موقعك جاهز في أيام</span>
+      <span><b>نسخة تجريبية مجانية</b> قبل أي دفع</span>
     </div>
   </div>
 </header>
@@ -209,10 +215,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
         <div class="lbl">شاملًا كل شيء، كل شهر</div>
         <p class="hint">الاستضافة، النسخ الاحتياطي، التحديثات، جوجل، والتعديلات.</p>
       </div>
+      <div class="pbox rv">
+        <div class="num">25 €<small>/ سنة</small></div>
+        <div class="lbl">النطاق، إن أردت أن يصبح ملكك</div>
+        <p class="hint">اختياري، من الشهر الأول. وإن لم ترده يبقى النطاق عندنا. والمبلغ يتبع سعر خدمة الحجز.</p>
+      </div>
     </div>
     <ul class="inc">
       <li class="rv">موقع احترافي حتى 5 صفحات، ممتاز على الهاتف</li>
-      <li class="rv">اسم النطاق باسمك أنت</li>
+      <li class="rv">اسم النطاق مسجَّل ببيانات محلك (25 € سنويًّا ليصبح ملكك)</li>
       <li class="rv">الاستضافة والنسخ الاحتياطي التلقائي</li>
       <li class="rv">ملفّ Google وخرائط جوجل محدّثان</li>
       <li class="rv">زرّ واتساب واتصال مباشر من الهاتف</li>
@@ -227,16 +238,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
     <h2 class="rv">ثلاث خطوات، وأنت لا تلمس شيئًا</h2>
     <div class="grid g3 steps" style="margin-top:26px">
       <div class="card rv">
-        <h3>مكالمة 15 دقيقة</h3>
-        <p>تحدّثنا عن محلك. ونُريك ما سنفعله له، قبل أي التزام.</p>
+        <h3>تترك طلبك</h3>
+        <p>اسم محلك وعنوانه ونشاطه من النموذج. بلا مكالمة وبلا موعد.</p>
       </div>
       <div class="card rv">
-        <h3>نحن نبني</h3>
-        <p>ترسل لنا صورك ومعلوماتك. ونتولّى نحن كل الباقي — دون أي خطوة تقنية عليك.</p>
+        <h3>نُصمّم نسختك التجريبية</h3>
+        <p>يصلك كتابيًّا رابط نسخة تجريبية من موقعك — بلا أي دفع.</p>
       </div>
       <div class="card rv">
-        <h3>محلّك يصبح على الإنترنت</h3>
-        <p>الموقع يعمل، ونواصل تحديثه كل شهر معك.</p>
+        <h3>أعجبتك؟ موقعك يصبح على الإنترنت</h3>
+        <p>تُفعّل الاشتراك (20 €/شهر)، ويُنشَر الموقع، ونُبقيه حيًّا كل شهر معك.</p>
       </div>
     </div>
   </div>
@@ -277,8 +288,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
         <p>رسالة واحدة تكفي: بلا رسوم، بلا إشعار مسبق، وبلا مدة إلزامية.</p>
       </div>
       <div class="card rv">
-        <h3>النطاق باسمك</h3>
-        <p>اسم نطاقك وملفّ Google مسجّلان باسمك من اليوم الأول.</p>
+        <h3>النطاق، بوضوح تام</h3>
+        <p>النطاق مسجَّل ببيانات محلك، لكنه يبقى ملكنا حتى تدفع ثمنه: 25 € سنويًّا من الشهر الأول إن أردت أن يصبح ملكك.</p>
       </div>
       <div class="card rv">
         <h3>شخص واحد تتعامل معه</h3>
@@ -295,89 +306,118 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
     <div style="margin-top:22px">
       <details class="rv">
         <summary>هل عليّ أن أتولّى شيئًا؟</summary>
-        <p>لا. تعطينا معلومات محلك وصوره — والباقي عملنا نحن. ولا نطلب منك أي معرفة تقنية.</p>
-      </details>
-      <details class="rv">
-        <summary>في كم من الوقت يصبح الموقع جاهزًا؟</summary>
-        <p>في أيام قليلة بعد المكالمة، بحسب سرعة وصول صورك ومعلوماتك إلينا.</p>
-      </details>
-      <details class="rv">
-        <summary>ماذا تغطّي الـ20 يورو بالضبط؟</summary>
-        <p>استضافة الموقع، النسخ الاحتياطي، التحديثات، إدارة ملفّ Google، والتعديلات التي تطلبها. بلا مصاريف خفيّة.</p>
+        <p>لا. تعطينا اسم محلك وعنوانه ونشاطه من النموذج — والباقي عملنا. ولا معرفة تقنية ولا موعد ولا مكالمة.</p>
       </details>
       <details class="rv">
         <summary>هل النطاق والموقع ملكي؟</summary>
-        <p>نعم. اسم النطاق مسجَّل باسمك من البداية، ولستَ محبوسًا عندنا: تتوقّف متى شئت.</p>
+        <p>محتوى الموقع لك. أمّا اسم النطاق فيُسجَّل ببيانات محلك، لكنه يبقى ملكنا حتى تدفع ثمنه: 25 € سنويًّا تُفاتَر من الشهر الأول إن أردت أن يصبح ملكك.</p>
       </details>
       <details class="rv">
         <summary>ماذا يحدث إن أوقفت الاشتراك؟</summary>
-        <p>رسالة واحدة تكفي، بلا رسوم ولا إشعار مسبق. ويبقى نطاقك وملفّ Google باسمك.</p>
+        <p>رسالة واحدة تكفي، بلا رسوم ولا إشعار مسبق. يبقى النطاق عندنا دون استعمال حتى نهاية مدّة حجزه، ثم يعود حرًّا.</p>
       </details>
-
+      <details class="rv">
+        <summary>ماذا تغطّي الـ20 يورو بالضبط؟</summary>
+        <p>استضافة الموقع، النسخ الاحتياطي، التحديثات، إدارة ملفّ Google، والتعديلات التي تطلبها. بلا مصاريف خفيّة. وتملّك النطاق خيار مستقلّ بـ25 € سنويًّا.</p>
+      </details>
+      <details class="rv">
+        <summary>في كم من الوقت؟</summary>
+        <p>تصل النسخة التجريبية في أيام قليلة بعد طلبك. وبعد تفعيل الاشتراك يُنشَر الموقع خلال يوم أو يومين.</p>
+      </details>
     </div>
   </div>
 </section>
 
-<section class="sec contact" id="contact">
-  <div class="wrap">
-    <div class="kick rv">تواصل</div>
-    <h2 class="rv">لنتحدّث عن محلك</h2>
-    <p class="lede rv" style="margin-inline:auto">مكالمة 15 دقيقة تكفي لتعرف ما سنفعله لمحلك — بلا أي التزام.</p>
-    <div class="btns">
-      <a class="btn" id="waContact" href="#">اكتب على واتساب</a>
-      <a class="btn ghost" id="telContact" href="tel:+32XXXXXXXX">اتصال: ‎+32 XX XX XX XX</a>
-    </div>
-    <p class="note">نجيب من الاثنين إلى السبت، 9:00 – 19:00.</p>
-    <p class="note"><a class="tlink" href="../assets/fiche-ninja-ar.pdf">عرضنا في صفحة واحدة، للطباعة (PDF) ←</a></p>
-  </div>
-</section>
-
-<section class="sec" id="devis" hidden>
+<section class="sec" id="devis">
   <div class="wrap" style="text-align:center">
-    <div class="kick rv">اطلب موقعك</div>
-    <h2 class="rv">اترك بياناتك ونعاود الاتصال بك</h2>
-    <p class="lede rv" style="margin-inline:auto">نموذج من 30 ثانية. نعاود الاتصال بك خلال 24 ساعة ونعرض عليك ما سنفعله لمحلك — بلا التزام.</p>
-    <form class="form rv" id="devisForm">
+    <div class="kick rv">اطلب نسختك التجريبية</div>
+    <h2 class="rv">أخبرنا عن محلك، ونُريك موقعه</h2>
+    <p class="lede rv" style="margin-inline:auto">هذه الحقول تكفي: نبني نسخة تجريبية من موقعك ونرسل لك الرابط. كتابةً، بلا التزام وبلا دفع.</p>
+    <form class="form rv" id="devisForm" novalidate>
       <div class="row">
         <div>
-          <label for="fNom">اسمك</label>
-          <input id="fNom" name="nom" type="text" autocomplete="name" required>
+          <label for="fNom">اسم المحل</label>
+          <input id="fNom" name="nom" type="text" autocomplete="organization" required>
         </div>
         <div>
-          <label for="fTel">الهاتف / واتساب</label>
+          <label for="fAct">النشاط</label>
+          <select id="fAct" name="activite">
+            <option value="restaurant">مطعم / سناك</option>
+            <option value="salon">حلاق / صالون تجميل</option>
+            <option value="magasin">متجر</option>
+            <option value="cabinet">عيادة (طبية / شبه طبية)</option>
+            <option value="autre">أخرى</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="fAdr">عنوان المحل</label>
+        <input id="fAdr" name="adresse" type="text" autocomplete="street-address" placeholder="الشارع، الرقم، الرمز البريدي، البلديّة" required>
+      </div>
+      <div class="row">
+        <div>
+          <label for="fMail">البريد الإلكتروني</label>
+          <input id="fMail" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="fTel">رقم الهاتف</label>
           <input id="fTel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="+32 4XX XX XX XX" required>
         </div>
       </div>
       <div>
-        <label for="fType">محلك</label>
-        <select id="fType" name="type">
-          <option value="restaurant">مطعم / سناك</option>
-          <option value="salon">حلاق / صالون تجميل</option>
-          <option value="magasin">متجر</option>
-          <option value="cabinet">عيادة (طبية / شبه طبية)</option>
-          <option value="autre">أخرى</option>
+        <label for="fLang">اللغة المفضّلة</label>
+        <select id="fLang" name="langue">
+          <option value="fr">Français</option>
+          <option value="nl">Nederlands</option>
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
         </select>
       </div>
       <div>
         <label for="fMsg">كلمة عن محلك (اختياري)</label>
         <textarea id="fMsg" name="msg" rows="3"></textarea>
       </div>
-      <button class="btn" type="submit">أرسل طلبي</button>
-      <p class="ok" hidden>شكرًا. سنعاود الاتصال بك قريبًا.</p>
-      <p class="note">نجيب خلال 24 ساعة. وهذه المعلومات تُستعمل فقط للتواصل معك.</p>
+      <button class="btn" id="devisBtn" type="submit">اطلب نسختي التجريبية</button>
+      <p class="ok" id="devisOk" hidden>شكرًا. ستصلك نسختك التجريبية كتابيًّا.</p>
+      <p class="note" id="devisOn" hidden>نردّ كتابيًّا خلال 24 ساعة. وهذه المعلومات تُستعمل فقط لتجهيز نسختك التجريبية.</p>
+      <p class="note" id="devisOff">إرسال الطلبات قيد التفعيل — عُد قريبًا.</p>
+      <p class="note"><a class="tlink" href="../assets/fiche-ninja-ar.pdf">عرضنا في صفحة واحدة، للطباعة (PDF) ←</a></p>
     </form>
   </div>
 </section>
 
+
 <footer>
   <div class="wrap">
     <span>© 2026 نينجا · مواقع لمحلات الحيّ · بروكسل</span>
+    <span>0 € للبناء · 20 € شهريًّا شاملة كل شيء · النطاق 25 € سنويًّا اختياريًّا</span>
     <span>هذا الموقع نفسه هو دليلنا.</span>
   </div>
 </footer>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"NINJA","description":"Création de sites web pour commerces de quartier à Bruxelles : 0 € de création, puis 20 €/mois tout compris (hébergement, sauvegardes, mises à jour, fiche Google).","areaServed":{"@type":"City","name":"Bruxelles"},"address":{"@type":"PostalAddress","addressLocality":"Bruxelles","addressCountry":"BE"},"makesOffer":[{"@type":"Offer","name":"Création de site web","price":"0","priceCurrency":"EUR"},{"@type":"Offer","name":"Abonnement mensuel tout compris","price":"20","priceCurrency":"EUR","priceSpecification":{"@type":"UnitPriceSpecification","price":"20","priceCurrency":"EUR","unitCode":"MON"}}]}
+{
+ "@context":"https://schema.org","@type":"ProfessionalService","name":"NINJA",
+ "description":"Création de sites web pour commerces de quartier à Bruxelles : démonstration gratuite avant tout paiement, puis 0 € de création et 20 €/mois tout compris (hébergement, sauvegardes, mises à jour, fiche Google).",
+ "url":"https://ninja-sites.github.io/ninja-service/",
+ "areaServed":[{"@type":"City","name":"Bruxelles"},{"@type":"AdministrativeArea","name":"Saint-Josse-ten-Noode"},{"@type":"AdministrativeArea","name":"Schaerbeek"},{"@type":"AdministrativeArea","name":"Molenbeek-Saint-Jean"},{"@type":"AdministrativeArea","name":"Ixelles"},{"@type":"AdministrativeArea","name":"Bruxelles-Ville"}],
+ "address":{"@type":"PostalAddress","addressLocality":"Bruxelles","addressCountry":"BE"},
+ "availableLanguage":["fr","nl","en","ar"],
+ "knowsLanguage":["fr","nl","en","ar"],
+ "makesOffer":[
+  {"@type":"Offer","name":"Démonstration gratuite du site","price":"0","priceCurrency":"EUR"},
+  {"@type":"Offer","name":"Création du site","price":"0","priceCurrency":"EUR"},
+  {"@type":"Offer","name":"Abonnement mensuel tout compris","price":"20","priceCurrency":"EUR","priceSpecification":{"@type":"UnitPriceSpecification","price":"20","priceCurrency":"EUR","unitCode":"MON"}},
+  {"@type":"Offer","name":"Pleine propriété du nom de domaine (option)","price":"25","priceCurrency":"EUR","priceSpecification":{"@type":"UnitPriceSpecification","price":"25","priceCurrency":"EUR","unitCode":"ANN"}}
+ ],
+ "mainEntity":[
+  {"@type":"Question","name":"Dois-je m'occuper de quelque chose ?","acceptedAnswer":{"@type":"Answer","text":"Non. Vous nous donnez le nom, l'adresse et l'activité de votre commerce par le formulaire ; le reste est notre travail."}},
+  {"@type":"Question","name":"Le domaine et le site m'appartiennent-ils ?","acceptedAnswer":{"@type":"Answer","text":"Le contenu du site est à vous. Le nom de domaine est enregistré aux coordonnées de votre commerce mais reste notre propriété tant qu'il n'est pas payé : 25 € par an, dès le premier mois."}},
+  {"@type":"Question","name":"Que se passe-t-il si j'arrête l'abonnement ?","acceptedAnswer":{"@type":"Answer","text":"Vous arrêtez par un simple message, sans frais ni préavis. Le nom de domaine reste chez nous, inutilisé, jusqu'à la fin de son enregistrement, puis il redevient libre."}},
+  {"@type":"Question","name":"Que couvrent exactement les 20 € ?","acceptedAnswer":{"@type":"Answer","text":"L'hébergement, les sauvegardes, les mises à jour, la tenue de votre fiche Google et les modifications demandées. La pleine propriété du domaine est une option à 25 €/an."}},
+  {"@type":"Question","name":"En combien de temps ?","acceptedAnswer":{"@type":"Answer","text":"La démonstration arrive quelques jours après votre demande ; après activation de l'abonnement, la mise en ligne prend un ou deux jours."}}
+ ]
+}
 </script>
 
 <script>
@@ -386,35 +426,38 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
 
 /* ===== قنوات التواصل (املأ ما يلزم ثم أعد البناء والنشر) ===== */
 var CHANNELS = {
-  formEndpoint: "",  /* رابط استقبال النموذج (POST JSON) — فارغ = قسم النموذج يبقى مخفيًّا */
-  whatsapp: ""       /* رقم واتساب بصيغة دولية بلا + — فارغ = أزرار واتساب معطّلة */
+  formEndpoint: "",  /* رابط استقبال النموذج (POST JSON) — فارغ = غير مُفعَّل */
+  whatsapp: ""       /* رقم واتساب بصيغة دولية بلا + — يُرسل الطلب كرسالة واتساب */
 };
+var CH_ACTIVE = !!(CHANNELS.formEndpoint || CHANNELS.whatsapp);
 (function(){
-  var wa=CHANNELS.whatsapp, sec=document.getElementById('devis');
-  if (wa){
-    document.querySelectorAll('#waHero,#waContact').forEach(function(a){
-      var lang=document.documentElement.lang;
-      var txt={fr:"Bonjour, je vous contacte au sujet du site web de mon commerce.",nl:"Hallo, ik contacteer u over de website van mijn zaak.",ar:"مرحبًا، أتواصل معك بخصوص موقع محلي."}[lang]||"Bonjour.";
-      a.href='https://wa.me/'+wa+'?text='+encodeURIComponent(txt); a.target='_blank'; a.rel='noopener';
-    });
-    var tel=document.getElementById('telContact');
-    if (tel){ tel.href='tel:+'+wa; var t2={fr:'Appeler : +'+wa,nl:'Bellen: +'+wa,ar:'اتصال: ‎+'+wa}[document.documentElement.lang]; if(t2) tel.textContent=t2; }
-  }
-  if (!sec) return;
-  if (!CHANNELS.formEndpoint && !wa){ sec.hidden = true; return; }
-  sec.hidden = false;
-  var f=document.getElementById('devisForm'); if(!f) return;
+  var f = document.getElementById('devisForm');
+  if (!f) return;
+  var btn = document.getElementById('devisBtn');
+  var on = document.getElementById('devisOn'), off = document.getElementById('devisOff');
+  /* ضبط مبدّل اللغة الافتراضية في النموذج على لغة الصفحة */
+  var sel = document.getElementById('fLang');
+  if (sel) sel.value = document.documentElement.lang || 'fr';
+  /* ترجمة الـplaceholder للعنوان حسب اللغة */
+  var adr = document.getElementById('fAdr');
+  if (adr) { var ph = adr.getAttribute('data-' + (document.documentElement.lang || 'fr') + '-placeholder'); if (ph) adr.placeholder = ph; }
+  if (on) on.hidden = !CH_ACTIVE;
+  if (off) off.hidden = CH_ACTIVE;
+  if (btn) btn.disabled = !CH_ACTIVE;
   f.addEventListener('submit', function(e){
     e.preventDefault();
-    var d=new FormData(f), lang=document.documentElement.lang;
-    var head={fr:'Nouvelle demande — ',nl:'Nieuwe aanvraag — ',ar:'طلب جديد — '}[lang]||'';
-    var msg=head+(d.get('nom')||'')+' · '+(d.get('tel')||'')+' · '+(d.get('type')||'')+(d.get('msg')?' · '+d.get('msg'):'');
-    function done(){ f.reset(); var o=f.querySelector('.ok'); if(o) o.hidden=false; }
+    if (!CH_ACTIVE) return;
+    var d = new FormData(f), lang = document.documentElement.lang;
+    var head = {fr:'Demande de démo — ', nl:'Demoaanvraag — ', ar:'طلب نسخة تجريبية — '}[lang] || '';
+    var parts = [d.get('nom'), d.get('activite'), d.get('adresse'), d.get('email'), d.get('tel'), d.get('langue'), d.get('msg')].filter(Boolean);
+    var msg = head + parts.join(' · ');
+    function done(){ f.reset(); if (sel) sel.value = document.documentElement.lang || 'fr'; var o = document.getElementById('devisOk'); if (o) o.hidden = false; }
     if (CHANNELS.formEndpoint){
-      fetch(CHANNELS.formEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.fromEntries(d))})
-        .then(function(r){ if(r.ok) done(); }).catch(function(){});
-    } else if (wa){
-      window.open('https://wa.me/'+wa+'?text='+encodeURIComponent(msg),'_blank','noopener'); done();
+      fetch(CHANNELS.formEndpoint, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(Object.fromEntries(d))})
+        .then(function(r){ if (r.ok) done(); }).catch(function(){});
+    } else if (CHANNELS.whatsapp){
+      window.open('https://wa.me/' + CHANNELS.whatsapp + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+      done();
     }
   });
 })();

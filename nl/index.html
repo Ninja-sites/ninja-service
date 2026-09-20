@@ -2,11 +2,16 @@
 <html lang="nl" dir="ltr">
 <head>
 <meta charset="utf-8">
+<meta name="theme-color" content="#0c0f13">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="../assets/icon-180.png">
+<link rel="manifest" href="manifest.webmanifest">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>NINJA — Websites voor buurtzaken · 0 € opstartkost, daarna 20 €/maand</title>
-<meta name="description" content="Uw zaak verdient het om gevonden te worden. Wij maken uw professionele website: 0 € opstartkost, daarna 20 €/maand alles inbegrepen — hosting, updates, Google, WhatsApp. Brussel.">
-<meta property="og:title" content="NINJA — Websites voor buurtzaken · 0 € opstartkost, daarna 20 €/maand">
-<meta property="og:description" content="Uw zaak verdient het om gevonden te worden. Wij maken uw professionele website: 0 € opstartkost, daarna 20 €/maand alles inbegrepen — hosting, updates, Google, WhatsApp. Brussel.">
+<title>NINJA — Gratis demo van uw website · 0 € opstartkost, daarna 20 €/maand</title>
+<meta name="description" content="Gratis demo van uw website vóór elke betaling. Daarna: 0 € opstartkost, 20 €/maand alles inbegrepen — hosting, updates, Google, WhatsApp. Brussel.">
+<meta property="og:title" content="NINJA — Gratis demo van uw website · 0 € opstartkost, daarna 20 €/maand">
+<meta property="og:description" content="Gratis demo van uw website vóór elke betaling. Daarna: 0 € opstartkost, 20 €/maand alles inbegrepen — hosting, updates, Google, WhatsApp. Brussel.">
 <meta property="og:type" content="website">
 <link rel="canonical" href="https://ninja-sites.github.io/ninja-service/nl/">
 <link rel="alternate" hreflang="fr" href="https://ninja-sites.github.io/ninja-service/">
@@ -134,6 +139,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
 .form input:focus,.form select:focus,.form textarea:focus{outline:none;border-color:var(--red)}
 .form textarea{resize:vertical}
 .form .btn{justify-self:start}
+.form .btn[disabled]{opacity:.55;cursor:not-allowed;background:var(--ink3);color:var(--mut)}
 .form .ok{color:#7ee2a8;font-size:.95rem;margin:0}
 .form .note{margin:0}
 .tlink{color:var(--red);text-decoration:none}
@@ -165,15 +171,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
   <div class="wrap">
     <div class="kick">Websites voor buurtzaken · Brussel</div>
     <h1 class="rv">Uw zaak verdient het om <em>gevonden</em> te worden.</h1>
-    <p class="sub rv">Wij maken uw professionele website. <b>0 € opstartkost</b> — daarna <b>20 €/maand</b>, alles inbegrepen: hosting, updates, Google, WhatsApp.</p>
+    <p class="sub rv">Wij maken eerst een <b>gratis demo</b> van uw website. Bevalt hij? Dan: <b>0 € opstartkost</b>, daarna <b>20 €/maand</b> alles inbegrepen — hosting, updates, Google, WhatsApp.</p>
     <div class="btns">
-      <a class="btn" id="waHero" href="#">Chat op WhatsApp</a>
+      <a class="btn" id="ctaDemo" href="#devis">Mijn gratis demo aanvragen</a>
       <a class="btn ghost" href="#offre">Bekijk wat inbegrepen is</a>
     </div>
     <div class="strip">
       <span><b>0 €</b> opstartkost</span>
       <span><b>20 €</b> per maand, alles inbegrepen</span>
-      <span>Online binnen enkele dagen</span>
+      <span><b>Gratis demo</b> vóór elke betaling</span>
     </div>
   </div>
 </header>
@@ -209,10 +215,15 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
         <div class="lbl">Alles inbegrepen, elke maand</div>
         <p class="hint">Hosting, back-ups, updates, Google, aanpassingen.</p>
       </div>
+      <div class="pbox rv">
+        <div class="num">25 €<small>/ jaar</small></div>
+        <div class="lbl">Het domein, als u het wilt bezitten</div>
+        <p class="hint">Optioneel, vanaf de eerste maand. Anders blijft het domein bij ons. Dat bedrag volgt de prijs van de registratiedienst.</p>
+      </div>
     </div>
     <ul class="inc">
       <li class="rv">Professionele website tot 5 pagina's, perfect op de telefoon</li>
-      <li class="rv">Domeinnaam op uw naam</li>
+      <li class="rv">Domeinnaam geregistreerd op de gegevens van uw zaak (25 €/jaar om hem te bezitten)</li>
       <li class="rv">Hosting en automatische back-ups</li>
       <li class="rv">Google-profiel en Google Maps up-to-date gehouden</li>
       <li class="rv">WhatsApp-knop en direct bellen vanaf de telefoon</li>
@@ -227,16 +238,16 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
     <h2 class="rv">Drie stappen, en u raakt niets aan</h2>
     <div class="grid g3 steps" style="margin-top:26px">
       <div class="card rv">
-        <h3>Een gesprek van 15 minuten</h3>
-        <p>U vertelt over uw zaak. Wij tonen wat wij voor u zouden doen, vóór elke verbintenis.</p>
+        <h3>U laat uw aanvraag achter</h3>
+        <p>Naam, adres en activiteit van uw zaak, via het formulier. Geen telefoongesprek, geen afspraak.</p>
       </div>
       <div class="card rv">
-        <h3>Wij bouwen</h3>
-        <p>U stuurt ons uw foto's en gegevens. Wij doen al de rest — u hoeft niets technisch te doen.</p>
+        <h3>Wij maken uw demo</h3>
+        <p>U ontvangt schriftelijk een link naar een demo van uw website — zonder enige betaling.</p>
       </div>
       <div class="card rv">
-        <h3>Uw zaak staat online</h3>
-        <p>De website leeft, en wij blijven hem elke maand met u bijwerken.</p>
+        <h3>Bevalt hij: uw website gaat online</h3>
+        <p>U activeert het abonnement van 20 €/maand. De site gaat online en wij houden hem elke maand levend, samen met u.</p>
       </div>
     </div>
   </div>
@@ -277,8 +288,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
         <p>Eén bericht volstaat: geen kosten, geen opzegtermijn, geen vaste looptijd.</p>
       </div>
       <div class="card rv">
-        <h3>Het domein op uw naam</h3>
-        <p>Uw domeinnaam en uw Google-profiel worden vanaf de eerste dag op uw naam geregistreerd.</p>
+        <h3>Het domein, volledig duidelijk</h3>
+        <p>Het domein staat op naam van uw zaak, maar blijft het onze tot u het betaalt: 25 € per jaar, vanaf de eerste maand, als u het wilt bezitten.</p>
       </div>
       <div class="card rv">
         <h3>Eén aanspreekpunt</h3>
@@ -295,89 +306,118 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
     <div style="margin-top:22px">
       <details class="rv">
         <summary>Moet ik zelf iets doen?</summary>
-        <p>Nee. U geeft ons de gegevens en de foto's van uw zaak — de rest is ons werk. Er is geen technische kennis nodig.</p>
-      </details>
-      <details class="rv">
-        <summary>Hoe snel staat de website online?</summary>
-        <p>Enkele dagen na het gesprek, afhankelijk van hoe snel wij uw foto's en gegevens ontvangen.</p>
-      </details>
-      <details class="rv">
-        <summary>Wat dekt de 20 € precies?</summary>
-        <p>De hosting van de website, de back-ups, de updates, het beheer van uw Google-profiel en de aanpassingen die u vraagt. Geen verborgen kosten.</p>
+        <p>Nee. U geeft ons naam, adres en activiteit van uw zaak via het formulier — de rest is ons werk. Geen technische kennis, geen afspraak, geen telefoongesprek.</p>
       </details>
       <details class="rv">
         <summary>Zijn het domein en de website van mij?</summary>
-        <p>Ja. De domeinnaam wordt vanaf het begin op uw naam geregistreerd, en u zit nooit vast: u stopt wanneer u wilt.</p>
+        <p>De inhoud van de website is van u. De domeinnaam staat op naam van uw zaak, maar blijft ons eigendom tot u hem betaalt: 25 € per jaar, gefactureerd vanaf de eerste maand als u hem wilt bezitten.</p>
       </details>
       <details class="rv">
         <summary>Wat gebeurt er als ik het abonnement stop?</summary>
-        <p>Eén bericht volstaat, zonder kosten of opzegtermijn. Uw domeinnaam en uw Google-profiel blijven op uw naam.</p>
+        <p>Eén bericht volstaat, zonder kosten of opzegtermijn. De domeinnaam blijft bij ons en wordt niet gebruikt tot het einde van de registratie — daarna komt hij weer vrij.</p>
       </details>
-
+      <details class="rv">
+        <summary>Wat dekt de 20 € precies?</summary>
+        <p>De hosting van de website, de back-ups, de updates, het beheer van uw Google-profiel en de aanpassingen die u vraagt. Geen verborgen kosten. Volledige eigendom van het domein is een optie van 25 €/jaar.</p>
+      </details>
+      <details class="rv">
+        <summary>Hoe snel?</summary>
+        <p>De demo komt enkele dagen na uw aanvraag. Zodra het abonnement actief is, gaat de site binnen één à twee dagen online.</p>
+      </details>
     </div>
   </div>
 </section>
 
-<section class="sec contact" id="contact">
-  <div class="wrap">
-    <div class="kick rv">Contact</div>
-    <h2 class="rv">Laten we over uw zaak praten</h2>
-    <p class="lede rv" style="margin-inline:auto">Een gesprek van 15 minuten volstaat om te weten wat wij voor u zouden doen — zonder verplichting.</p>
-    <div class="btns">
-      <a class="btn" id="waContact" href="#">Schrijf op WhatsApp</a>
-      <a class="btn ghost" id="telContact" href="tel:+32XXXXXXXX">Bel: +32 XX XX XX XX</a>
-    </div>
-    <p class="note">Wij antwoorden van maandag tot zaterdag, 9 – 19 u.</p>
-    <p class="note"><a class="tlink" href="../assets/fiche-ninja-nl.pdf">Ons aanbod op één pagina, om af te drukken (PDF) →</a></p>
-  </div>
-</section>
-
-<section class="sec" id="devis" hidden>
+<section class="sec" id="devis">
   <div class="wrap" style="text-align:center">
-    <div class="kick rv">Uw website aanvragen</div>
-    <h2 class="rv">Laat uw gegevens achter, wij bellen u terug</h2>
-    <p class="lede rv" style="margin-inline:auto">Een formulier van 30 seconden. Wij bellen u binnen 24 uur terug en tonen wat wij voor uw zaak zouden doen — zonder verplichting.</p>
-    <form class="form rv" id="devisForm">
+    <div class="kick rv">Uw demo aanvragen</div>
+    <h2 class="rv">Zeg ons welke zaak, wij tonen u de website</h2>
+    <p class="lede rv" style="margin-inline:auto">Deze velden volstaan: wij bouwen een demo van uw website en sturen u de link. Schriftelijk, zonder verplichting en zonder betaling.</p>
+    <form class="form rv" id="devisForm" novalidate>
       <div class="row">
         <div>
-          <label for="fNom">Uw naam</label>
-          <input id="fNom" name="nom" type="text" autocomplete="name" required>
+          <label for="fNom">Naam van de zaak</label>
+          <input id="fNom" name="nom" type="text" autocomplete="organization" required>
         </div>
         <div>
-          <label for="fTel">Telefoon / WhatsApp</label>
+          <label for="fAct">Activiteit</label>
+          <select id="fAct" name="activite">
+            <option value="restaurant">Restaurant / snack</option>
+            <option value="salon">Kapsalon / schoonheidssalon</option>
+            <option value="magasin">Winkel</option>
+            <option value="cabinet">Praktijk (medisch / paramedisch)</option>
+            <option value="autre">Andere</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label for="fAdr">Adres van de zaak</label>
+        <input id="fAdr" name="adresse" type="text" autocomplete="street-address" placeholder="Straat, nummer, postcode, gemeente" required>
+      </div>
+      <div class="row">
+        <div>
+          <label for="fMail">E-mail</label>
+          <input id="fMail" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div>
+          <label for="fTel">Telefoon</label>
           <input id="fTel" name="tel" type="tel" inputmode="tel" autocomplete="tel" placeholder="+32 4XX XX XX XX" required>
         </div>
       </div>
       <div>
-        <label for="fType">Uw zaak</label>
-        <select id="fType" name="type">
-          <option value="restaurant">Restaurant / snack</option>
-          <option value="salon">Kapsalon / schoonheidssalon</option>
-          <option value="magasin">Winkel</option>
-          <option value="cabinet">Praktijk (medisch / paramedisch)</option>
-          <option value="autre">Andere</option>
+        <label for="fLang">Contacttaal</label>
+        <select id="fLang" name="langue">
+          <option value="fr">Français</option>
+          <option value="nl">Nederlands</option>
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
         </select>
       </div>
       <div>
         <label for="fMsg">Iets over uw zaak (optioneel)</label>
         <textarea id="fMsg" name="msg" rows="3"></textarea>
       </div>
-      <button class="btn" type="submit">Mijn aanvraag versturen</button>
-      <p class="ok" hidden>Bedankt. Wij bellen u snel terug.</p>
-      <p class="note">Wij antwoorden binnen 24 u. Deze gegevens dienen enkel om u te contacteren.</p>
+      <button class="btn" id="devisBtn" type="submit">Mijn gratis demo aanvragen</button>
+      <p class="ok" id="devisOk" hidden>Bedankt. Uw demo komt schriftelijk naar u toe.</p>
+      <p class="note" id="devisOn" hidden>Wij antwoorden schriftelijk binnen 24 u. Deze gegevens dienen enkel om uw demo voor te bereiden.</p>
+      <p class="note" id="devisOff">Het versturen van aanvragen wordt nog geactiveerd — kom binnenkort terug.</p>
+      <p class="note"><a class="tlink" href="../assets/fiche-ninja-nl.pdf">Ons aanbod op één pagina, om af te drukken (PDF) →</a></p>
     </form>
   </div>
 </section>
 
+
 <footer>
   <div class="wrap">
     <span>© 2026 NINJA · Websites voor buurtzaken · Brussel</span>
+    <span>0 € opstartkost · 20 €/maand alles inbegrepen · domein 25 €/jaar optioneel</span>
     <span>Deze website is onze eigen demonstratie.</span>
   </div>
 </footer>
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"ProfessionalService","name":"NINJA","description":"Création de sites web pour commerces de quartier à Bruxelles : 0 € de création, puis 20 €/mois tout compris (hébergement, sauvegardes, mises à jour, fiche Google).","areaServed":{"@type":"City","name":"Bruxelles"},"address":{"@type":"PostalAddress","addressLocality":"Bruxelles","addressCountry":"BE"},"makesOffer":[{"@type":"Offer","name":"Création de site web","price":"0","priceCurrency":"EUR"},{"@type":"Offer","name":"Abonnement mensuel tout compris","price":"20","priceCurrency":"EUR","priceSpecification":{"@type":"UnitPriceSpecification","price":"20","priceCurrency":"EUR","unitCode":"MON"}}]}
+{
+ "@context":"https://schema.org","@type":"ProfessionalService","name":"NINJA",
+ "description":"Création de sites web pour commerces de quartier à Bruxelles : démonstration gratuite avant tout paiement, puis 0 € de création et 20 €/mois tout compris (hébergement, sauvegardes, mises à jour, fiche Google).",
+ "url":"https://ninja-sites.github.io/ninja-service/",
+ "areaServed":[{"@type":"City","name":"Bruxelles"},{"@type":"AdministrativeArea","name":"Saint-Josse-ten-Noode"},{"@type":"AdministrativeArea","name":"Schaerbeek"},{"@type":"AdministrativeArea","name":"Molenbeek-Saint-Jean"},{"@type":"AdministrativeArea","name":"Ixelles"},{"@type":"AdministrativeArea","name":"Bruxelles-Ville"}],
+ "address":{"@type":"PostalAddress","addressLocality":"Bruxelles","addressCountry":"BE"},
+ "availableLanguage":["fr","nl","en","ar"],
+ "knowsLanguage":["fr","nl","en","ar"],
+ "makesOffer":[
+  {"@type":"Offer","name":"Démonstration gratuite du site","price":"0","priceCurrency":"EUR"},
+  {"@type":"Offer","name":"Création du site","price":"0","priceCurrency":"EUR"},
+  {"@type":"Offer","name":"Abonnement mensuel tout compris","price":"20","priceCurrency":"EUR","priceSpecification":{"@type":"UnitPriceSpecification","price":"20","priceCurrency":"EUR","unitCode":"MON"}},
+  {"@type":"Offer","name":"Pleine propriété du nom de domaine (option)","price":"25","priceCurrency":"EUR","priceSpecification":{"@type":"UnitPriceSpecification","price":"25","priceCurrency":"EUR","unitCode":"ANN"}}
+ ],
+ "mainEntity":[
+  {"@type":"Question","name":"Dois-je m'occuper de quelque chose ?","acceptedAnswer":{"@type":"Answer","text":"Non. Vous nous donnez le nom, l'adresse et l'activité de votre commerce par le formulaire ; le reste est notre travail."}},
+  {"@type":"Question","name":"Le domaine et le site m'appartiennent-ils ?","acceptedAnswer":{"@type":"Answer","text":"Le contenu du site est à vous. Le nom de domaine est enregistré aux coordonnées de votre commerce mais reste notre propriété tant qu'il n'est pas payé : 25 € par an, dès le premier mois."}},
+  {"@type":"Question","name":"Que se passe-t-il si j'arrête l'abonnement ?","acceptedAnswer":{"@type":"Answer","text":"Vous arrêtez par un simple message, sans frais ni préavis. Le nom de domaine reste chez nous, inutilisé, jusqu'à la fin de son enregistrement, puis il redevient libre."}},
+  {"@type":"Question","name":"Que couvrent exactement les 20 € ?","acceptedAnswer":{"@type":"Answer","text":"L'hébergement, les sauvegardes, les mises à jour, la tenue de votre fiche Google et les modifications demandées. La pleine propriété du domaine est une option à 25 €/an."}},
+  {"@type":"Question","name":"En combien de temps ?","acceptedAnswer":{"@type":"Answer","text":"La démonstration arrive quelques jours après votre demande ; après activation de l'abonnement, la mise en ligne prend un ou deux jours."}}
+ ]
+}
 </script>
 
 <script>
@@ -386,35 +426,38 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
 
 /* ===== قنوات التواصل (املأ ما يلزم ثم أعد البناء والنشر) ===== */
 var CHANNELS = {
-  formEndpoint: "",  /* رابط استقبال النموذج (POST JSON) — فارغ = قسم النموذج يبقى مخفيًّا */
-  whatsapp: ""       /* رقم واتساب بصيغة دولية بلا + — فارغ = أزرار واتساب معطّلة */
+  formEndpoint: "",  /* رابط استقبال النموذج (POST JSON) — فارغ = غير مُفعَّل */
+  whatsapp: ""       /* رقم واتساب بصيغة دولية بلا + — يُرسل الطلب كرسالة واتساب */
 };
+var CH_ACTIVE = !!(CHANNELS.formEndpoint || CHANNELS.whatsapp);
 (function(){
-  var wa=CHANNELS.whatsapp, sec=document.getElementById('devis');
-  if (wa){
-    document.querySelectorAll('#waHero,#waContact').forEach(function(a){
-      var lang=document.documentElement.lang;
-      var txt={fr:"Bonjour, je vous contacte au sujet du site web de mon commerce.",nl:"Hallo, ik contacteer u over de website van mijn zaak.",ar:"مرحبًا، أتواصل معك بخصوص موقع محلي."}[lang]||"Bonjour.";
-      a.href='https://wa.me/'+wa+'?text='+encodeURIComponent(txt); a.target='_blank'; a.rel='noopener';
-    });
-    var tel=document.getElementById('telContact');
-    if (tel){ tel.href='tel:+'+wa; var t2={fr:'Appeler : +'+wa,nl:'Bellen: +'+wa,ar:'اتصال: ‎+'+wa}[document.documentElement.lang]; if(t2) tel.textContent=t2; }
-  }
-  if (!sec) return;
-  if (!CHANNELS.formEndpoint && !wa){ sec.hidden = true; return; }
-  sec.hidden = false;
-  var f=document.getElementById('devisForm'); if(!f) return;
+  var f = document.getElementById('devisForm');
+  if (!f) return;
+  var btn = document.getElementById('devisBtn');
+  var on = document.getElementById('devisOn'), off = document.getElementById('devisOff');
+  /* ضبط مبدّل اللغة الافتراضية في النموذج على لغة الصفحة */
+  var sel = document.getElementById('fLang');
+  if (sel) sel.value = document.documentElement.lang || 'fr';
+  /* ترجمة الـplaceholder للعنوان حسب اللغة */
+  var adr = document.getElementById('fAdr');
+  if (adr) { var ph = adr.getAttribute('data-' + (document.documentElement.lang || 'fr') + '-placeholder'); if (ph) adr.placeholder = ph; }
+  if (on) on.hidden = !CH_ACTIVE;
+  if (off) off.hidden = CH_ACTIVE;
+  if (btn) btn.disabled = !CH_ACTIVE;
   f.addEventListener('submit', function(e){
     e.preventDefault();
-    var d=new FormData(f), lang=document.documentElement.lang;
-    var head={fr:'Nouvelle demande — ',nl:'Nieuwe aanvraag — ',ar:'طلب جديد — '}[lang]||'';
-    var msg=head+(d.get('nom')||'')+' · '+(d.get('tel')||'')+' · '+(d.get('type')||'')+(d.get('msg')?' · '+d.get('msg'):'');
-    function done(){ f.reset(); var o=f.querySelector('.ok'); if(o) o.hidden=false; }
+    if (!CH_ACTIVE) return;
+    var d = new FormData(f), lang = document.documentElement.lang;
+    var head = {fr:'Demande de démo — ', nl:'Demoaanvraag — ', ar:'طلب نسخة تجريبية — '}[lang] || '';
+    var parts = [d.get('nom'), d.get('activite'), d.get('adresse'), d.get('email'), d.get('tel'), d.get('langue'), d.get('msg')].filter(Boolean);
+    var msg = head + parts.join(' · ');
+    function done(){ f.reset(); if (sel) sel.value = document.documentElement.lang || 'fr'; var o = document.getElementById('devisOk'); if (o) o.hidden = false; }
     if (CHANNELS.formEndpoint){
-      fetch(CHANNELS.formEndpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(Object.fromEntries(d))})
-        .then(function(r){ if(r.ok) done(); }).catch(function(){});
-    } else if (wa){
-      window.open('https://wa.me/'+wa+'?text='+encodeURIComponent(msg),'_blank','noopener'); done();
+      fetch(CHANNELS.formEndpoint, {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(Object.fromEntries(d))})
+        .then(function(r){ if (r.ok) done(); }).catch(function(){});
+    } else if (CHANNELS.whatsapp){
+      window.open('https://wa.me/' + CHANNELS.whatsapp + '?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+      done();
     }
   });
 })();

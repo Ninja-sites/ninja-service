@@ -1,0 +1,16 @@
+{
+  "name": "NINJA — Sites web pour commerces de quartier",
+  "short_name": "NINJA",
+  "description": "Démo gratuite de votre site avant tout paiement. Ensuite 0 € de création, 20 €/mois tout compris. Bruxelles.",
+  "lang": "fr",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0c0f13",
+  "theme_color": "#0c0f13",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
