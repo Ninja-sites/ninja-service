@@ -44,6 +44,8 @@ em{font-style:normal;color:var(--red)}
 .nav nav a:hover{color:var(--cream)}
 .lang{background:none;border:1px solid var(--line);color:var(--cream);font-family:inherit;font-size:.85rem;padding:7px 12px;border-radius:999px;cursor:pointer}
 .lang:hover{border-color:var(--red);color:var(--red)}
+.langs{display:flex;gap:6px;align-items:center}
+.langs .lang[aria-current="true"]{border-color:var(--red);color:var(--red);font-weight:700}
 @media(max-width:860px){.nav nav{display:none}}
 
 /* buttons */
@@ -123,91 +125,91 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
   <div class="wrap">
     <a class="brand" href="#top"><i></i>NINJA</a>
     <nav>
-      <a href="#probleme" data-fr="Le problème" data-ar="المشكلة">Le problème</a>
-      <a href="#offre" data-fr="L'offre" data-ar="العرض">L'offre</a>
-      <a href="#etapes" data-fr="Comment ça marche" data-ar="كيف نعمل">Comment ça marche</a>
-      <a href="#faq" data-fr="Questions" data-ar="أسئلة">Questions</a>
+      <a href="#probleme" data-fr="Le problème" data-nl="Het probleem" data-ar="المشكلة">Le problème</a>
+      <a href="#offre" data-fr="L'offre" data-nl="Het aanbod" data-ar="العرض">L'offre</a>
+      <a href="#etapes" data-fr="Comment ça marche" data-nl="Hoe het werkt" data-ar="كيف نعمل">Comment ça marche</a>
+      <a href="#faq" data-fr="Questions" data-nl="Vragen" data-ar="أسئلة">Questions</a>
     </nav>
-    <button class="lang" id="langBtn" data-fr="العربية" data-ar="Français">العربية</button>
+    <div class="langs"><button class="lang" type="button" data-setlang="fr" aria-current="true">FR</button><button class="lang" type="button" data-setlang="nl" aria-current="false">NL</button><button class="lang" type="button" data-setlang="ar" aria-current="false">العربية</button></div>
   </div>
 </div>
 
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="kick" data-fr="Sites web pour commerces de quartier · Bruxelles" data-ar="مواقع لمحلات الحيّ · بروكسل">Sites web pour commerces de quartier · Bruxelles</div>
-    <h1 class="rv" data-fr="Votre commerce mérite d'être <em>trouvé</em>." data-ar="محلّك يستحقّ أن <em>يُوجَد</em>.">Votre commerce mérite d'être <em>trouvé</em>.</h1>
-    <p class="sub rv" data-fr="Nous créons votre site professionnel. <b>0 € de création</b> — puis <b>20 €/mois</b> tout compris : hébergement, mises à jour, Google, WhatsApp." data-ar="نبني موقعك الاحترافي. <b>0 € للبناء</b> — ثم <b>20 €/شهر</b> شاملًا كل شيء: الاستضافة، التحديثات، جوجل، واتساب.">Nous créons votre site professionnel. <b>0 € de création</b> — puis <b>20 €/mois</b> tout compris : hébergement, mises à jour, Google, WhatsApp.</p>
+    <div class="kick" data-fr="Sites web pour commerces de quartier · Bruxelles" data-nl="Websites voor buurtzaken · Brussel" data-ar="مواقع لمحلات الحيّ · بروكسل">Sites web pour commerces de quartier · Bruxelles</div>
+    <h1 class="rv" data-fr="Votre commerce mérite d'être <em>trouvé</em>." data-nl="Uw zaak verdient het om <em>gevonden</em> te worden." data-ar="محلّك يستحقّ أن <em>يُوجَد</em>.">Votre commerce mérite d'être <em>trouvé</em>.</h1>
+    <p class="sub rv" data-fr="Nous créons votre site professionnel. <b>0 € de création</b> — puis <b>20 €/mois</b> tout compris : hébergement, mises à jour, Google, WhatsApp." data-nl="Wij maken uw professionele website. <b>0 € opstartkost</b> — daarna <b>20 €/maand</b>, alles inbegrepen: hosting, updates, Google, WhatsApp." data-ar="نبني موقعك الاحترافي. <b>0 € للبناء</b> — ثم <b>20 €/شهر</b> شاملًا كل شيء: الاستضافة، التحديثات، جوجل، واتساب.">Nous créons votre site professionnel. <b>0 € de création</b> — puis <b>20 €/mois</b> tout compris : hébergement, mises à jour, Google, WhatsApp.</p>
     <div class="btns">
-      <a class="btn" id="waHero" href="#" data-fr="Discuter sur WhatsApp" data-ar="تحدّث على واتساب">Discuter sur WhatsApp</a>
-      <a class="btn ghost" href="#offre" data-fr="Voir ce qui est inclus" data-ar="ما يشمله الاشتراك">Voir ce qui est inclus</a>
+      <a class="btn" id="waHero" href="#" data-fr="Discuter sur WhatsApp" data-nl="Chat op WhatsApp" data-ar="تحدّث على واتساب">Discuter sur WhatsApp</a>
+      <a class="btn ghost" href="#offre" data-fr="Voir ce qui est inclus" data-nl="Bekijk wat inbegrepen is" data-ar="ما يشمله الاشتراك">Voir ce qui est inclus</a>
     </div>
     <div class="strip">
-      <span data-fr="<b>0 €</b> de création" data-ar="<b>0 €</b> للبناء"><b>0 €</b> de création</span>
-      <span data-fr="<b>20 €</b> par mois, tout compris" data-ar="<b>20 €</b> شهريًا شاملة كل شيء"><b>20 €</b> par mois, tout compris</span>
-      <span data-fr="En ligne en quelques jours" data-ar="موقعك جاهز في أيام">En ligne en quelques jours</span>
+      <span data-fr="<b>0 €</b> de création" data-nl="<b>0 €</b> opstartkost" data-ar="<b>0 €</b> للبناء"><b>0 €</b> de création</span>
+      <span data-fr="<b>20 €</b> par mois, tout compris" data-nl="<b>20 €</b> per maand, alles inbegrepen" data-ar="<b>20 €</b> شهريًا شاملة كل شيء"><b>20 €</b> par mois, tout compris</span>
+      <span data-fr="En ligne en quelques jours" data-nl="Online binnen enkele dagen" data-ar="موقعك جاهز في أيام">En ligne en quelques jours</span>
     </div>
   </div>
 </header>
 
 <section class="sec" id="probleme">
   <div class="wrap">
-    <div class="kick rv" data-fr="Le problème" data-ar="المشكلة">Le problème</div>
-    <h2 class="rv" data-fr="Vos clients ne vous cherchent plus comme avant" data-ar="زبائنك لم يعودوا يبحثون عنك كما قبل">Vos clients ne vous cherchent plus comme avant</h2>
-    <p class="lede rv" data-fr="Ils demandent à Google et à ChatGPT. Ces moteurs lisent les sites web et les données Google — pas Instagram, pas Facebook, pas TikTok." data-ar="يسألون جوجل وChatGPT. وهذه المحرّكات تقرأ المواقع وبيانات جوجل — ولا تقرأ إنستغرام ولا فيسبوك ولا تيك توك.">Ils demandent à Google et à ChatGPT. Ces moteurs lisent les sites web et les données Google — pas Instagram, pas Facebook, pas TikTok.</p>
+    <div class="kick rv" data-fr="Le problème" data-nl="Het probleem" data-ar="المشكلة">Le problème</div>
+    <h2 class="rv" data-fr="Vos clients ne vous cherchent plus comme avant" data-nl="Uw klanten zoeken u niet meer zoals vroeger" data-ar="زبائنك لم يعودوا يبحثون عنك كما قبل">Vos clients ne vous cherchent plus comme avant</h2>
+    <p class="lede rv" data-fr="Ils demandent à Google et à ChatGPT. Ces moteurs lisent les sites web et les données Google — pas Instagram, pas Facebook, pas TikTok." data-nl="Ze vragen het aan Google en ChatGPT. Die zoeken in websites en Google-gegevens — niet op Instagram, Facebook of TikTok." data-ar="يسألون جوجل وChatGPT. وهذه المحرّكات تقرأ المواقع وبيانات جوجل — ولا تقرأ إنستغرام ولا فيسبوك ولا تيك توك.">Ils demandent à Google et à ChatGPT. Ces moteurs lisent les sites web et les données Google — pas Instagram, pas Facebook, pas TikTok.</p>
     <div class="grid g4" style="margin-top:28px">
-      <div class="card stat rv"><div class="n">45 %</div><p data-fr="des consommateurs demandent à ChatGPT un commerce local — 6 % un an plus tôt" data-ar="من المستهلكين يسألون ChatGPT عن محلّ محلي — وكانت 6% قبل سنة">des consommateurs demandent à ChatGPT un commerce local — 6 % un an plus tôt</p></div>
-      <div class="card stat rv"><div class="n">67 %</div><p data-fr="des commerces locaux n'apparaissent dans aucune de ces réponses" data-ar="من المحلات المحلية لا تظهر في أيٍّ من هذه الإجابات">des commerces locaux n'apparaissent dans aucune de ces réponses</p></div>
-      <div class="card stat rv"><div class="n">77 %</div><p data-fr="des consommateurs commencent par le site du commerce quand ils le cherchent" data-ar="من المستهلكين يبدؤون من موقع المحلّ حين يبحثون عنه">des consommateurs commencent par le site du commerce quand ils le cherchent</p></div>
-      <div class="card stat rv"><div class="n">76 %</div><p data-fr="des recherches « près de moi » finissent par une visite en 24 h" data-ar="من بحوث «قريب منّي» تنتهي بزيارة خلال 24 ساعة">des recherches « près de moi » finissent par une visite en 24 h</p></div>
+      <div class="card stat rv"><div class="n">45 %</div><p data-fr="des consommateurs demandent à ChatGPT un commerce local — 6 % un an plus tôt" data-nl="van de consumenten vraagt ChatGPT naar een zaak in de buurt — een jaar eerder 6 %" data-ar="من المستهلكين يسألون ChatGPT عن محلّ محلي — وكانت 6% قبل سنة">des consommateurs demandent à ChatGPT un commerce local — 6 % un an plus tôt</p></div>
+      <div class="card stat rv"><div class="n">67 %</div><p data-fr="des commerces locaux n'apparaissent dans aucune de ces réponses" data-nl="van de buurtzaken komt in geen enkel van die antwoorden voor" data-ar="من المحلات المحلية لا تظهر في أيٍّ من هذه الإجابات">des commerces locaux n'apparaissent dans aucune de ces réponses</p></div>
+      <div class="card stat rv"><div class="n">77 %</div><p data-fr="des consommateurs commencent par le site du commerce quand ils le cherchent" data-nl="van de consumenten begint bij de website van de zaak wanneer ze die zoeken" data-ar="من المستهلكين يبدؤون من موقع المحلّ حين يبحثون عنه">des consommateurs commencent par le site du commerce quand ils le cherchent</p></div>
+      <div class="card stat rv"><div class="n">76 %</div><p data-fr="des recherches « près de moi » finissent par une visite en 24 h" data-nl="van de zoekopdrachten «bij mij in de buurt» leidt binnen 24 u tot een bezoek" data-ar="من بحوث «قريب منّي» تنتهي بزيارة خلال 24 ساعة">des recherches « près de moi » finissent par une visite en 24 h</p></div>
     </div>
-    <p class="src" data-fr="Sources : BrightLocal LCRS, mars 2026 · DreamHost Trust Index 2026." data-ar="المصادر: BrightLocal LCRS آذار 2026 · DreamHost Trust Index 2026.">Sources : BrightLocal LCRS, mars 2026 · DreamHost Trust Index 2026.</p>
-    <p class="lede rv" style="margin-top:22px" data-fr="Et un compte Instagram se loue, il ne s'achète pas : une suspension ou un piratage, et votre visibilité tombe à zéro du jour au lendemain." data-ar="وحساب إنستغرام يُستأجَر ولا يُملَك: إيقافٌ أو اختراق، ويعود ظهورك إلى الصفر في يوم واحد.">Et un compte Instagram se loue, il ne s'achète pas : une suspension ou un piratage, et votre visibilité tombe à zéro du jour au lendemain.</p>
+    <p class="src" data-fr="Sources : BrightLocal LCRS, mars 2026 · DreamHost Trust Index 2026." data-nl="Bronnen: BrightLocal LCRS, maart 2026 · DreamHost Trust Index 2026." data-ar="المصادر: BrightLocal LCRS آذار 2026 · DreamHost Trust Index 2026.">Sources : BrightLocal LCRS, mars 2026 · DreamHost Trust Index 2026.</p>
+    <p class="lede rv" style="margin-top:22px" data-fr="Et un compte Instagram se loue, il ne s'achète pas : une suspension ou un piratage, et votre visibilité tombe à zéro du jour au lendemain." data-nl="En een Instagram-account huurt u, u bezit het niet: één schorsing of een hack en uw zichtbaarheid valt van de ene dag op de andere op nul." data-ar="وحساب إنستغرام يُستأجَر ولا يُملَك: إيقافٌ أو اختراق، ويعود ظهورك إلى الصفر في يوم واحد.">Et un compte Instagram se loue, il ne s'achète pas : une suspension ou un piratage, et votre visibilité tombe à zéro du jour au lendemain.</p>
   </div>
 </section>
 
 <section class="sec" id="offre">
   <div class="wrap">
-    <div class="kick rv" data-fr="L'offre" data-ar="العرض">L'offre</div>
-    <h2 class="rv" data-fr="Une seule formule. Simple et transparente." data-ar="صيغة واحدة. بسيطة وواضحة.">Une seule formule. Simple et transparente.</h2>
+    <div class="kick rv" data-fr="L'offre" data-nl="Het aanbod" data-ar="العرض">L'offre</div>
+    <h2 class="rv" data-fr="Une seule formule. Simple et transparente." data-nl="Één formule. Eenvoudig en transparant." data-ar="صيغة واحدة. بسيطة وواضحة.">Une seule formule. Simple et transparente.</h2>
     <div class="price">
       <div class="pbox rv">
         <div class="num">0 €</div>
-        <div class="lbl" data-fr="Création de votre site" data-ar="بناء موقعك">Création de votre site</div>
-        <p class="hint" data-fr="Aucun frais au départ. Pas d'acompte, pas de devis surprise." data-ar="بلا أي دفع في البداية. لا دفعة مقدّمة ولا فاتورة مفاجئة.">Aucun frais au départ. Pas d'acompte, pas de devis surprise.</p>
+        <div class="lbl" data-fr="Création de votre site" data-nl="Uw website bouwen" data-ar="بناء موقعك">Création de votre site</div>
+        <p class="hint" data-fr="Aucun frais au départ. Pas d'acompte, pas de devis surprise." data-nl="Geen enkele kost vooraf. Geen voorschot, geen verrassingsfactuur." data-ar="بلا أي دفع في البداية. لا دفعة مقدّمة ولا فاتورة مفاجئة.">Aucun frais au départ. Pas d'acompte, pas de devis surprise.</p>
       </div>
       <div class="pbox hi rv">
-        <div class="num">20 €<small data-fr="/ mois" data-ar="/ شهر">/ mois</small></div>
-        <div class="lbl" data-fr="Tout compris, chaque mois" data-ar="شاملًا كل شيء، كل شهر">Tout compris, chaque mois</div>
-        <p class="hint" data-fr="Hébergement, sauvegardes, mises à jour, Google, modifications." data-ar="الاستضافة، النسخ الاحتياطي، التحديثات، جوجل، والتعديلات.">Hébergement, sauvegardes, mises à jour, Google, modifications.</p>
+        <div class="num">20 €<small data-fr="/ mois" data-nl="/ maand" data-ar="/ شهر">/ mois</small></div>
+        <div class="lbl" data-fr="Tout compris, chaque mois" data-nl="Alles inbegrepen, elke maand" data-ar="شاملًا كل شيء، كل شهر">Tout compris, chaque mois</div>
+        <p class="hint" data-fr="Hébergement, sauvegardes, mises à jour, Google, modifications." data-nl="Hosting, back-ups, updates, Google, aanpassingen." data-ar="الاستضافة، النسخ الاحتياطي، التحديثات، جوجل، والتعديلات.">Hébergement, sauvegardes, mises à jour, Google, modifications.</p>
       </div>
     </div>
     <ul class="inc">
-      <li class="rv" data-fr="Site professionnel jusqu'à 5 pages, parfait sur téléphone" data-ar="موقع احترافي حتى 5 صفحات، ممتاز على الهاتف">Site professionnel jusqu'à 5 pages, parfait sur téléphone</li>
-      <li class="rv" data-fr="Nom de domaine à votre nom" data-ar="اسم النطاق باسمك أنت">Nom de domaine à votre nom</li>
-      <li class="rv" data-fr="Hébergement et sauvegardes automatiques" data-ar="الاستضافة والنسخ الاحتياطي التلقائي">Hébergement et sauvegardes automatiques</li>
-      <li class="rv" data-fr="Fiche Google et Google Maps tenues à jour" data-ar="ملفّ Google وخرائط جوجل محدّثان">Fiche Google et Google Maps tenues à jour</li>
-      <li class="rv" data-fr="Bouton WhatsApp et appel direct depuis le téléphone" data-ar="زرّ واتساب واتصال مباشر من الهاتف">Bouton WhatsApp et appel direct depuis le téléphone</li>
-      <li class="rv" data-fr="Modifications chaque mois + données structurées pour Google et les moteurs IA" data-ar="تعديلات كل شهر + بيانات منظّمة تقرأها جوجل ومحرّكات الذكاء الاصطناعي">Modifications chaque mois + données structurées pour Google et les moteurs IA</li>
+      <li class="rv" data-fr="Site professionnel jusqu'à 5 pages, parfait sur téléphone" data-nl="Professionele website tot 5 pagina's, perfect op de telefoon" data-ar="موقع احترافي حتى 5 صفحات، ممتاز على الهاتف">Site professionnel jusqu'à 5 pages, parfait sur téléphone</li>
+      <li class="rv" data-fr="Nom de domaine à votre nom" data-nl="Domeinnaam op uw naam" data-ar="اسم النطاق باسمك أنت">Nom de domaine à votre nom</li>
+      <li class="rv" data-fr="Hébergement et sauvegardes automatiques" data-nl="Hosting en automatische back-ups" data-ar="الاستضافة والنسخ الاحتياطي التلقائي">Hébergement et sauvegardes automatiques</li>
+      <li class="rv" data-fr="Fiche Google et Google Maps tenues à jour" data-nl="Google-profiel en Google Maps up-to-date gehouden" data-ar="ملفّ Google وخرائط جوجل محدّثان">Fiche Google et Google Maps tenues à jour</li>
+      <li class="rv" data-fr="Bouton WhatsApp et appel direct depuis le téléphone" data-nl="WhatsApp-knop en direct bellen vanaf de telefoon" data-ar="زرّ واتساب واتصال مباشر من الهاتف">Bouton WhatsApp et appel direct depuis le téléphone</li>
+      <li class="rv" data-fr="Modifications chaque mois + données structurées pour Google et les moteurs IA" data-nl="Elke maand aanpassingen + gestructureerde data voor Google en AI-zoekmachines" data-ar="تعديلات كل شهر + بيانات منظّمة تقرأها جوجل ومحرّكات الذكاء الاصطناعي">Modifications chaque mois + données structurées pour Google et les moteurs IA</li>
     </ul>
   </div>
 </section>
 
 <section class="sec" id="etapes">
   <div class="wrap">
-    <div class="kick rv" data-fr="Comment ça marche" data-ar="كيف نعمل">Comment ça marche</div>
-    <h2 class="rv" data-fr="Trois étapes, et vous ne touchez à rien" data-ar="ثلاث خطوات، وأنت لا تلمس شيئًا">Trois étapes, et vous ne touchez à rien</h2>
+    <div class="kick rv" data-fr="Comment ça marche" data-nl="Hoe het werkt" data-ar="كيف نعمل">Comment ça marche</div>
+    <h2 class="rv" data-fr="Trois étapes, et vous ne touchez à rien" data-nl="Drie stappen, en u raakt niets aan" data-ar="ثلاث خطوات، وأنت لا تلمس شيئًا">Trois étapes, et vous ne touchez à rien</h2>
     <div class="grid g3 steps" style="margin-top:26px">
       <div class="card rv">
-        <h3 data-fr="Un appel de 15 minutes" data-ar="مكالمة 15 دقيقة">Un appel de 15 minutes</h3>
-        <p data-fr="Vous nous parlez de votre commerce. Nous vous montrons ce que nous ferions pour vous, avant tout engagement." data-ar="تحدّثنا عن محلك. ونُريك ما سنفعله له، قبل أي التزام.">Vous nous parlez de votre commerce. Nous vous montrons ce que nous ferions pour vous, avant tout engagement.</p>
+        <h3 data-fr="Un appel de 15 minutes" data-nl="Een gesprek van 15 minuten" data-ar="مكالمة 15 دقيقة">Un appel de 15 minutes</h3>
+        <p data-fr="Vous nous parlez de votre commerce. Nous vous montrons ce que nous ferions pour vous, avant tout engagement." data-nl="U vertelt over uw zaak. Wij tonen wat wij voor u zouden doen, vóór elke verbintenis." data-ar="تحدّثنا عن محلك. ونُريك ما سنفعله له، قبل أي التزام.">Vous nous parlez de votre commerce. Nous vous montrons ce que nous ferions pour vous, avant tout engagement.</p>
       </div>
       <div class="card rv">
-        <h3 data-fr="Nous construisons" data-ar="نحن نبني">Nous construisons</h3>
-        <p data-fr="Vous nous envoyez vos photos et vos informations. Nous nous occupons de tout le reste — vous ne touchez à aucune technique." data-ar="ترسل لنا صورك ومعلوماتك. ونتولّى نحن كل الباقي — دون أي خطوة تقنية عليك.">Vous nous envoyez vos photos et vos informations. Nous nous occupons de tout le reste — vous ne touchez à aucune technique.</p>
+        <h3 data-fr="Nous construisons" data-nl="Wij bouwen" data-ar="نحن نبني">Nous construisons</h3>
+        <p data-fr="Vous nous envoyez vos photos et vos informations. Nous nous occupons de tout le reste — vous ne touchez à aucune technique." data-nl="U stuurt ons uw foto's en gegevens. Wij doen al de rest — u hoeft niets technisch te doen." data-ar="ترسل لنا صورك ومعلوماتك. ونتولّى نحن كل الباقي — دون أي خطوة تقنية عليك.">Vous nous envoyez vos photos et vos informations. Nous nous occupons de tout le reste — vous ne touchez à aucune technique.</p>
       </div>
       <div class="card rv">
-        <h3 data-fr="Votre commerce est en ligne" data-ar="محلّك يصبح على الإنترنت">Votre commerce est en ligne</h3>
-        <p data-fr="Le site vit, et nous continuons à le mettre à jour chaque mois, avec vous." data-ar="الموقع يعمل، ونواصل تحديثه كل شهر معك.">Le site vit, et nous continuons à le mettre à jour chaque mois, avec vous.</p>
+        <h3 data-fr="Votre commerce est en ligne" data-nl="Uw zaak staat online" data-ar="محلّك يصبح على الإنترنت">Votre commerce est en ligne</h3>
+        <p data-fr="Le site vit, et nous continuons à le mettre à jour chaque mois, avec vous." data-nl="De website leeft, en wij blijven hem elke maand met u bijwerken." data-ar="الموقع يعمل، ونواصل تحديثه كل شهر معك.">Le site vit, et nous continuons à le mettre à jour chaque mois, avec vous.</p>
       </div>
     </div>
   </div>
@@ -215,44 +217,44 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
 
 <section class="sec" id="exemple">
   <div class="wrap">
-    <div class="kick rv" data-fr="Notre travail" data-ar="من عملنا">Notre travail</div>
-    <h2 class="rv" data-fr="Un site que nous avons réalisé" data-ar="موقع أنجزناه">Un site que nous avons réalisé</h2>
+    <div class="kick rv" data-fr="Notre travail" data-nl="Ons werk" data-ar="من عملنا">Notre travail</div>
+    <h2 class="rv" data-fr="Un site que nous avons réalisé" data-nl="Een website die wij maakten" data-ar="موقع أنجزناه">Un site que nous avons réalisé</h2>
     <div class="ex rv">
       <img src="images/ref_saouda.jpg" alt="Site touristique de la localité d'Al-Saouda">
       <div>
-        <h3 class="fh" data-fr="Site touristique d'un village de montagne" data-ar="موقع سياحي لبلدة جبلية">Site touristique d'un village de montagne</h3>
-        <p data-fr="Un site complet, rapide, en arabe et consultable sur téléphone : galerie, carte, météo en direct et informations pratiques. C'est le même niveau de finition que nous appliquons à votre commerce." data-ar="موقع كامل وسريع، بالعربية ويُقرأ على الهاتف: معرض صور، خريطة، طقس مباشر، ومعلومات عملية. وهذه نفس الجودة التي نطبّقها على محلّك.">Un site complet, rapide, en arabe et consultable sur téléphone : galerie, carte, météo en direct et informations pratiques. C'est le même niveau de finition que nous appliquons à votre commerce.</p>
-        <p style="margin-bottom:0"><a class="tlink" href="https://ninja-sites.github.io/alsaouda/" target="_blank" rel="noopener" data-fr="Voir le site en ligne →" data-ar="شاهد الموقع الحيّ ←">Voir le site en ligne →</a></p>
+        <h3 class="fh" data-fr="Site touristique d'un village de montagne" data-nl="Toeristische website van een bergdorp" data-ar="موقع سياحي لبلدة جبلية">Site touristique d'un village de montagne</h3>
+        <p data-fr="Un site complet, rapide, en arabe et consultable sur téléphone : galerie, carte, météo en direct et informations pratiques. C'est le même niveau de finition que nous appliquons à votre commerce." data-nl="Een volledige, snelle website in het Arabisch, leesbaar op de telefoon: fotogalerij, kaart, live weer en praktische info. Dezelfde afwerking passen wij toe op uw zaak." data-ar="موقع كامل وسريع، بالعربية ويُقرأ على الهاتف: معرض صور، خريطة، طقس مباشر، ومعلومات عملية. وهذه نفس الجودة التي نطبّقها على محلّك.">Un site complet, rapide, en arabe et consultable sur téléphone : galerie, carte, météo en direct et informations pratiques. C'est le même niveau de finition que nous appliquons à votre commerce.</p>
+        <p style="margin-bottom:0"><a class="tlink" href="https://ninja-sites.github.io/alsaouda/" target="_blank" rel="noopener" data-fr="Voir le site en ligne →" data-nl="Bekijk de website live →" data-ar="شاهد الموقع الحيّ ←">Voir le site en ligne →</a></p>
       </div>
     </div>
-    <p class="src" data-fr="Des exemples pour votre type de commerce — restaurant, salon, magasin, cabinet — nous vous les montrons pendant l'appel." data-ar="أمثلة على نوع محلّك — مطعم، صالون، متجر، عيادة — نُريك إياها في المكالمة.">Des exemples pour votre type de commerce — restaurant, salon, magasin, cabinet — nous vous les montrons pendant l'appel.</p>
+    <p class="src" data-fr="Des exemples pour votre type de commerce — restaurant, salon, magasin, cabinet — nous vous les montrons pendant l'appel." data-nl="Voorbeelden voor uw soort zaak — restaurant, kapsalon, winkel, praktijk — tonen wij u tijdens het gesprek." data-ar="أمثلة على نوع محلّك — مطعم، صالون، متجر، عيادة — نُريك إياها في المكالمة.">Des exemples pour votre type de commerce — restaurant, salon, magasin, cabinet — nous vous les montrons pendant l'appel.</p>
   </div>
 </section>
 
 <section class="sec" id="pourquoi">
   <div class="wrap">
-    <div class="kick rv" data-fr="Pourquoi 0 € ?" data-ar="لماذا 0 €؟">Pourquoi 0 € ?</div>
-    <h2 class="rv" data-fr="Parce que nous gagnons sur l'abonnement, pas sur la création" data-ar="لأنّ ربحنا من الاشتراك، لا من البناء">Parce que nous gagnons sur l'abonnement, pas sur la création</h2>
-    <p class="lede rv" data-fr="Notre intérêt n'est pas de vous facturer un site une fois, puis de disparaître : il est que votre site travaille pour vous chaque mois. C'est exactement pour cela que la création est à 0 €. Les 20 € mensuels couvrent l'hébergement, les sauvegardes, les mises à jour, la fiche Google et notre travail — ni plus, ni moins." data-ar="مصلحتنا ليست أن نأخذ منك ثمن موقع مرّة ثم نختفي، بل أن يعمل موقعك لصالحك كل شهر. ولهذا بالضبط البناء بـ0 €. والعشرون يورو شهريًّا تغطّي الاستضافة والنسخ الاحتياطي والتحديثات وملفّ Google وعملنا — لا أكثر ولا أقلّ.">Notre intérêt n'est pas de vous facturer un site une fois, puis de disparaître : il est que votre site travaille pour vous chaque mois. C'est exactement pour cela que la création est à 0 €. Les 20 € mensuels couvrent l'hébergement, les sauvegardes, les mises à jour, la fiche Google et notre travail — ni plus, ni moins.</p>
+    <div class="kick rv" data-fr="Pourquoi 0 € ?" data-nl="Waarom 0 €?" data-ar="لماذا 0 €؟">Pourquoi 0 € ?</div>
+    <h2 class="rv" data-fr="Parce que nous gagnons sur l'abonnement, pas sur la création" data-nl="Omdat wij verdienen aan het abonnement, niet aan de bouw" data-ar="لأنّ ربحنا من الاشتراك، لا من البناء">Parce que nous gagnons sur l'abonnement, pas sur la création</h2>
+    <p class="lede rv" data-fr="Notre intérêt n'est pas de vous facturer un site une fois, puis de disparaître : il est que votre site travaille pour vous chaque mois. C'est exactement pour cela que la création est à 0 €. Les 20 € mensuels couvrent l'hébergement, les sauvegardes, les mises à jour, la fiche Google et notre travail — ni plus, ni moins." data-nl="Ons belang is niet u één keer een website aan te rekenen en dan te verdwijnen: het is dat uw website elke maand voor u werkt. Daarom is de bouw 0 €. De 20 € per maand dekken hosting, back-ups, updates, uw Google-profiel en ons werk — niet meer, niet minder." data-ar="مصلحتنا ليست أن نأخذ منك ثمن موقع مرّة ثم نختفي، بل أن يعمل موقعك لصالحك كل شهر. ولهذا بالضبط البناء بـ0 €. والعشرون يورو شهريًّا تغطّي الاستضافة والنسخ الاحتياطي والتحديثات وملفّ Google وعملنا — لا أكثر ولا أقلّ.">Notre intérêt n'est pas de vous facturer un site une fois, puis de disparaître : il est que votre site travaille pour vous chaque mois. C'est exactement pour cela que la création est à 0 €. Les 20 € mensuels couvrent l'hébergement, les sauvegardes, les mises à jour, la fiche Google et notre travail — ni plus, ni moins.</p>
   </div>
 </section>
 
 <section class="sec" id="faq">
   <div class="wrap">
-    <div class="kick rv" data-fr="Questions" data-ar="أسئلة">Questions</div>
-    <h2 class="rv" data-fr="Questions fréquentes" data-ar="أسئلة متكرّرة">Questions fréquentes</h2>
+    <div class="kick rv" data-fr="Questions" data-nl="Vragen" data-ar="أسئلة">Questions</div>
+    <h2 class="rv" data-fr="Questions fréquentes" data-nl="Veelgestelde vragen" data-ar="أسئلة متكرّرة">Questions fréquentes</h2>
     <div style="margin-top:22px">
       <details class="rv">
-        <summary data-fr="Dois-je m'occuper de quelque chose ?" data-ar="هل عليّ أن أتولّى شيئًا؟">Dois-je m'occuper de quelque chose ?</summary>
-        <p data-fr="Non. Vous nous donnez les informations et les photos de votre commerce — le reste est notre travail. Aucune compétence technique n'est demandée." data-ar="لا. تعطينا معلومات محلك وصوره — والباقي عملنا نحن. ولا نطلب منك أي معرفة تقنية.">Non. Vous nous donnez les informations et les photos de votre commerce — le reste est notre travail. Aucune compétence technique n'est demandée.</p>
+        <summary data-fr="Dois-je m'occuper de quelque chose ?" data-nl="Moet ik zelf iets doen?" data-ar="هل عليّ أن أتولّى شيئًا؟">Dois-je m'occuper de quelque chose ?</summary>
+        <p data-fr="Non. Vous nous donnez les informations et les photos de votre commerce — le reste est notre travail. Aucune compétence technique n'est demandée." data-nl="Nee. U geeft ons de gegevens en de foto's van uw zaak — de rest is ons werk. Er is geen technische kennis nodig." data-ar="لا. تعطينا معلومات محلك وصوره — والباقي عملنا نحن. ولا نطلب منك أي معرفة تقنية.">Non. Vous nous donnez les informations et les photos de votre commerce — le reste est notre travail. Aucune compétence technique n'est demandée.</p>
       </details>
       <details class="rv">
-        <summary data-fr="En combien de temps le site est-il en ligne ?" data-ar="في كم من الوقت يصبح الموقع جاهزًا؟">En combien de temps le site est-il en ligne ?</summary>
-        <p data-fr="Quelques jours après l'appel, selon la rapidité avec laquelle nous recevons vos photos et vos informations." data-ar="في أيام قليلة بعد المكالمة، بحسب سرعة وصول صورك ومعلوماتك إلينا.">Quelques jours après l'appel, selon la rapidité avec laquelle nous recevons vos photos et vos informations.</p>
+        <summary data-fr="En combien de temps le site est-il en ligne ?" data-nl="Hoe snel staat de website online?" data-ar="في كم من الوقت يصبح الموقع جاهزًا؟">En combien de temps le site est-il en ligne ?</summary>
+        <p data-fr="Quelques jours après l'appel, selon la rapidité avec laquelle nous recevons vos photos et vos informations." data-nl="Enkele dagen na het gesprek, afhankelijk van hoe snel wij uw foto's en gegevens ontvangen." data-ar="في أيام قليلة بعد المكالمة، بحسب سرعة وصول صورك ومعلوماتك إلينا.">Quelques jours après l'appel, selon la rapidité avec laquelle nous recevons vos photos et vos informations.</p>
       </details>
       <details class="rv">
-        <summary data-fr="Que couvrent exactement les 20 € ?" data-ar="ماذا تغطّي الـ20 يورو بالضبط؟">Que couvrent exactement les 20 € ?</summary>
-        <p data-fr="L'hébergement du site, les sauvegardes, les mises à jour, la tenue de votre fiche Google et les modifications que vous nous demandez. Pas de frais cachés." data-ar="استضافة الموقع، النسخ الاحتياطي، التحديثات، إدارة ملفّ Google، والتعديلات التي تطلبها. بلا مصاريف خفيّة.">L'hébergement du site, les sauvegardes, les mises à jour, la tenue de votre fiche Google et les modifications que vous nous demandez. Pas de frais cachés.</p>
+        <summary data-fr="Que couvrent exactement les 20 € ?" data-nl="Wat dekt de 20 € precies?" data-ar="ماذا تغطّي الـ20 يورو بالضبط؟">Que couvrent exactement les 20 € ?</summary>
+        <p data-fr="L'hébergement du site, les sauvegardes, les mises à jour, la tenue de votre fiche Google et les modifications que vous nous demandez. Pas de frais cachés." data-nl="De hosting van de website, de back-ups, de updates, het beheer van uw Google-profiel en de aanpassingen die u vraagt. Geen verborgen kosten." data-ar="استضافة الموقع، النسخ الاحتياطي، التحديثات، إدارة ملفّ Google، والتعديلات التي تطلبها. بلا مصاريف خفيّة.">L'hébergement du site, les sauvegardes, les mises à jour, la tenue de votre fiche Google et les modifications que vous nous demandez. Pas de frais cachés.</p>
       </details>
     </div>
   </div>
@@ -260,21 +262,21 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
 
 <section class="sec contact" id="contact">
   <div class="wrap">
-    <div class="kick rv" data-fr="Contact" data-ar="تواصل">Contact</div>
-    <h2 class="rv" data-fr="Parlons de votre commerce" data-ar="لنتحدّث عن محلك">Parlons de votre commerce</h2>
-    <p class="lede rv" style="margin-inline:auto" data-fr="Un appel de 15 minutes suffit pour savoir ce que nous ferions pour vous — sans engagement." data-ar="مكالمة 15 دقيقة تكفي لتعرف ما سنفعله لمحلك — بلا أي التزام.">Un appel de 15 minutes suffit pour savoir ce que nous ferions pour vous — sans engagement.</p>
+    <div class="kick rv" data-fr="Contact" data-nl="Contact" data-ar="تواصل">Contact</div>
+    <h2 class="rv" data-fr="Parlons de votre commerce" data-nl="Laten we over uw zaak praten" data-ar="لنتحدّث عن محلك">Parlons de votre commerce</h2>
+    <p class="lede rv" style="margin-inline:auto" data-fr="Un appel de 15 minutes suffit pour savoir ce que nous ferions pour vous — sans engagement." data-nl="Een gesprek van 15 minuten volstaat om te weten wat wij voor u zouden doen — zonder verplichting." data-ar="مكالمة 15 دقيقة تكفي لتعرف ما سنفعله لمحلك — بلا أي التزام.">Un appel de 15 minutes suffit pour savoir ce que nous ferions pour vous — sans engagement.</p>
     <div class="btns">
-      <a class="btn" id="waContact" href="#" data-fr="Écrire sur WhatsApp" data-ar="اكتب على واتساب">Écrire sur WhatsApp</a>
-      <a class="btn ghost" id="telContact" href="tel:+32XXXXXXXX" data-fr="Appeler : +32 XX XX XX XX" data-ar="اتصال: ‎+32 XX XX XX XX">Appeler : +32 XX XX XX XX</a>
+      <a class="btn" id="waContact" href="#" data-fr="Écrire sur WhatsApp" data-nl="Schrijf op WhatsApp" data-ar="اكتب على واتساب">Écrire sur WhatsApp</a>
+      <a class="btn ghost" id="telContact" href="tel:+32XXXXXXXX" data-fr="Appeler : +32 XX XX XX XX" data-nl="Bel: +32 XX XX XX XX" data-ar="اتصال: ‎+32 XX XX XX XX">Appeler : +32 XX XX XX XX</a>
     </div>
-    <p class="note" data-fr="Nous répondons du lundi au samedi, 9 h – 19 h." data-ar="نجيب من الاثنين إلى السبت، 9:00 – 19:00.">Nous répondons du lundi au samedi, 9 h – 19 h.</p>
+    <p class="note" data-fr="Nous répondons du lundi au samedi, 9 h – 19 h." data-nl="Wij antwoorden van maandag tot zaterdag, 9 – 19 u." data-ar="نجيب من الاثنين إلى السبت، 9:00 – 19:00.">Nous répondons du lundi au samedi, 9 h – 19 h.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <span data-fr="© 2026 NINJA · Sites web pour commerces de quartier · Bruxelles" data-ar="© 2026 نينجا · مواقع لمحلات الحيّ · بروكسل">© 2026 NINJA · Sites web pour commerces de quartier · Bruxelles</span>
-    <span data-fr="Ce site est notre propre démonstration." data-ar="هذا الموقع نفسه هو دليلنا.">Ce site est notre propre démonstration.</span>
+    <span data-fr="© 2026 NINJA · Sites web pour commerces de quartier · Bruxelles" data-nl="© 2026 NINJA · Websites voor buurtzaken · Brussel" data-ar="© 2026 نينجا · مواقع لمحلات الحيّ · بروكسل">© 2026 NINJA · Sites web pour commerces de quartier · Bruxelles</span>
+    <span data-fr="Ce site est notre propre démonstration." data-nl="Deze website is onze eigen demonstratie." data-ar="هذا الموقع نفسه هو دليلنا.">Ce site est notre propre démonstration.</span>
   </div>
 </footer>
 
@@ -283,30 +285,34 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-bet
 </script>
 
 <script>
-/* ===== تبديل اللغة ===== */
+/* ===== تبديل اللغة (FR · NL · AR) ===== */
 var WA = ""; // يُملأ برقم واتساب قبل النشر
+var TITLES = {
+  fr: 'NINJA — Sites web pour commerces de quartier · 0 € de création, 20 €/mois',
+  nl: 'NINJA — Websites voor buurtzaken · 0 € opstartkost, daarna 20 €/maand',
+  ar: 'نينجا — مواقع لمحلات الحيّ · 0 € للبناء ثم 20 € شهريًا'
+};
 function setLang(l){
+  if (!TITLES[l]) l = 'fr';
   document.documentElement.lang = l;
   document.documentElement.dir = (l === 'ar') ? 'rtl' : 'ltr';
   document.querySelectorAll('[data-fr]').forEach(function(el){
     var v = el.getAttribute('data-' + l);
-    if (v == null) return;
-    el.innerHTML = v;
+    if (v != null) el.innerHTML = v;
   });
-  var b = document.getElementById('langBtn');
-  if (b) b.textContent = (l === 'ar') ? 'Français' : 'العربية';
-  document.title = (l === 'ar')
-    ? 'نينجا — مواقع لمحلات الحيّ · 0 € للبناء ثم 20 € شهريًا'
-    : 'NINJA — Sites web pour commerces de quartier · 0 € de création, 20 €/mois';
+  document.querySelectorAll('[data-setlang]').forEach(function(b){
+    b.setAttribute('aria-current', b.getAttribute('data-setlang') === l ? 'true' : 'false');
+  });
+  document.title = TITLES[l];
   try { localStorage.setItem('ninja_lang', l); } catch(e){}
 }
-document.getElementById('langBtn').addEventListener('click', function(){
-  setLang(document.documentElement.lang === 'ar' ? 'fr' : 'ar');
+document.querySelectorAll('[data-setlang]').forEach(function(b){
+  b.addEventListener('click', function(){ setLang(b.getAttribute('data-setlang')); });
 });
 try {
   var q = new URLSearchParams(location.search).get('lang');
-  if (q === 'ar' || q === 'fr') setLang(q);
-  else if (localStorage.getItem('ninja_lang') === 'ar') setLang('ar');
+  if (q === 'ar' || q === 'fr' || q === 'nl') setLang(q);
+  else setLang(localStorage.getItem('ninja_lang') || 'fr');
 } catch(e){}
 
 /* ===== واتساب ===== */
